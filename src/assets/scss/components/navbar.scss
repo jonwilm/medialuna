@@ -1,0 +1,70 @@
+@import 'components/variables';
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1030;
+  #pre-nav {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+    @media (max-width: 1199.98px) {
+      display: none;
+    }
+    a {
+      color: $gray;
+      text-decoration: none;
+      span {
+        color: $gray-light;
+      }
+    }
+  }
+  
+  .navbar {
+    transition: background-color 0.3s;
+    a {
+      color: $white;
+      font-weight: bold;
+    }
+    .navbar-toggler {
+      &:focus {
+        box-shadow: none;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        @media (min-width: 1400px) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        .nav-link {
+          color: $white;
+          border-bottom: 1px solid transparent;
+          text-align: center;
+          transition: all 0.3s;
+        }
+        &:hover {
+          .nav-link {
+            border-bottom: 1px solid $white;
+          }
+        }
+      }
+    }
+    .icons-perfil {
+      a {
+        transition: all .3s;
+        &:hover {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

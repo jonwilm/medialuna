@@ -1,0 +1,49 @@
+.btn-rounded {
+  line-height: 1.75;
+}
+.btn-custom {
+  font-size: .8rem;
+}
+.btn-blue-white {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: $white;
+  font-weight: bold;
+  border-radius: 5px;
+  background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.31);
+  transition: all 0.3s;
+  &:hover {
+    color: $blue;
+  }
+  &:before {
+    background: $white;
+    border-radius: 5px;
+  }
+  &:focus {
+    box-shadow: none;
+    color: $blue;
+  }
+}
+
+.btn-center-out {
+  transform: perspective(1px) translateZ(0);
+  overflow: hidden;
+}
+.btn-center-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.btn-center-out:hover:before,
+.btn-center-out:focus:before,
+.btn-center-out:active:before {
+  transform: scale(1.15);
+}

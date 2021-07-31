@@ -6,17 +6,55 @@
 </head>
 <body>
   @@include("partials/navbar.html")
-  <link href="assets/libs/lightbox2/css/lightbox.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css">
-  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css">
+  <link href="assets/css/home.min.css" rel="stylesheet" />
 
   <main>
+    @@include("partials/home/welcome.html")
+    @@include("partials/home/section2.html")
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     @@include("partials/footer.html")
     
   </main>
 
   @@include("partials/scripts.html")
-  <script src="assets/libs/slick-slider/slick/slick.min.js"></script>
-  <script src="assets/libs/lightbox2/js/lightbox.min.js"></script>
+  <script>
+    $(function() {
+     $('.box').click (function() {
+       $('html, body').animate({scrollTop: $('section.section2').offset().top }, 'slow');
+       return false;
+     });
+   });
+ </script>
 </body>
 </html>
