@@ -67,8 +67,16 @@ html, body {
     &.ig:before {
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #bc1888 75%, #833ab4 100%) !important;
     }
+    &.ta:before {
+      background-color: #00af87;
+    }
+    &.go:before {
+      background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    }
     &.fb:hover:before,
-    &.ig:hover:before {
+    &.ig:hover:before,
+    &.ta:hover:before,
+    &.go:hover:before {
       transform: scaleY(1);
     }
   }

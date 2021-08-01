@@ -1,0 +1,26 @@
+.section-delivery {
+  background-image: url(../images/home/bg-delivery.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: .5rem;
+  padding-bottom: 10rem;
+  .title-delivery {
+    font-size: 3rem;
+    color: $white;
+  }
+  .content-text {
+    border: 1px solid #FFF;
+    background: linear-gradient(270.57deg, rgba(255,255,255,0.1) 0%, #FFF 37%, #FFF 66%, rgba(255,255,255,0.1) 100%);
+  }
+  .dish {
+    img {
+      transition: all .3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

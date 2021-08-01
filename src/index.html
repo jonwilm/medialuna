@@ -11,50 +11,15 @@
   <main>
     @@include("partials/home/welcome.html")
     @@include("partials/home/section2.html")
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    @@include("partials/home/banner-menu.html")
+    @@include("partials/home/menu.html")
+    @@include("partials/home/delivery.html")
+    @@include("partials/home/hablamos.html")
+ 
     @@include("partials/footer.html")
     
   </main>
 
   @@include("partials/scripts.html")
-  <script>
-    $(function() {
-     $('.box').click (function() {
-       $('html, body').animate({scrollTop: $('section.section2').offset().top }, 'slow');
-       return false;
-     });
-   });
- </script>
 </body>
 </html>

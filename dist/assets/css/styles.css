@@ -2,7 +2,7 @@
 html, body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
-  color: #333333; }
+  color: #4f4f4f; }
   @media (max-width: 424.98px) {
     html, body {
       font-size: 12px; } }
@@ -65,7 +65,11 @@ html, body {
       background-color: #3b5998; }
     #redes .red.ig:before {
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #bc1888 75%, #833ab4 100%) !important; }
-    #redes .red.fb:hover:before, #redes .red.ig:hover:before {
+    #redes .red.ta:before {
+      background-color: #00af87; }
+    #redes .red.go:before {
+      background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335); }
+    #redes .red.fb:hover:before, #redes .red.ig:hover:before, #redes .red.ta:hover:before, #redes .red.go:hover:before {
       transform: scaleY(1); }
 
 #navbar {
@@ -83,7 +87,7 @@ html, body {
       #navbar #pre-nav {
         display: none; } }
     #navbar #pre-nav a {
-      color: #333333;
+      color: #4f4f4f;
       text-decoration: none; }
       #navbar #pre-nav a span {
         color: #828282; }
@@ -113,13 +117,13 @@ html, body {
     #navbar .navbar .icons-perfil a {
       transition: all .3s; }
       #navbar .navbar .icons-perfil a:hover {
-        color: #333333; }
+        color: #4f4f4f; }
 
 .btn-rounded {
-  line-height: 1.75; }
+  line-height: 1.3; }
 
 .btn-custom {
-  font-size: .8rem; }
+  font-size: 1.1rem; }
 
 .btn-blue-white {
   padding-left: 4rem;
@@ -159,3 +163,38 @@ html, body {
 .btn-center-out:focus:before,
 .btn-center-out:active:before {
   transform: scale(1.15); }
+
+.section-footer1 {
+  background-image: url(../images/bg-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .section-footer1 h5 {
+    color: #ffffff;
+    font-weight: bold; }
+  .section-footer1 p {
+    color: #ffffff;
+    font-weight: 200; }
+  .section-footer1 ul {
+    padding-left: 0; }
+  .section-footer1 li {
+    list-style: none;
+    margin-bottom: .3rem; }
+    .section-footer1 li .items-menu {
+      color: #ffffff;
+      font-weight: 200;
+      text-decoration: none; }
+      .section-footer1 li .items-menu:hover {
+        color: #4f4f4f; }
+  .section-footer1 small {
+    color: #ffffff; }
+
+.section-footer2 {
+  padding: .5rem 0; }
+  .section-footer2 img {
+    width: 5%; }
+
+.section-footer3 {
+  padding: .5rem 0;
+  background-color: #4f4f4f;
+  color: #ffffff; }

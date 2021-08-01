@@ -1,0 +1,45 @@
+.section-hablamos {
+  background-image: url(../images/home/bg-hablamos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .content-map {
+    margin-top: -10rem;
+    .content-text-map {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title-map {
+        font-weight: 300;
+        color: $white;
+        font-size: 3rem;
+      }
+      .text-map {
+        a {
+          font-weight: 300;
+          color: $white;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .text-instagram {
+    color: white;
+    border-bottom: 1px solid white;
+    margin-top: 3rem;
+    p {
+      margin-bottom: .5rem;
+    }
+  }
+  .galeria {
+    img {
+      transition: all .3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

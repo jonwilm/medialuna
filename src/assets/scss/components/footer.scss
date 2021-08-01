@@ -1,0 +1,43 @@
+.section-footer1 {
+  background-image: url(../images/bg-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h5 {
+    color: $white;
+    font-weight: bold;
+  }
+  p {
+    color: $white;
+    font-weight: 200;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    margin-bottom: .3rem;
+    .items-menu {
+      color: $white;
+      font-weight: 200;
+      text-decoration: none;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+  small {
+    color: $white;
+  }
+}
+.section-footer2 {
+  padding: .5rem 0;
+  img {
+    width: 5%;
+  }
+}
+.section-footer3 {
+  padding: .5rem 0;
+  background-color: #4f4f4f;
+  color: $white;
+}
