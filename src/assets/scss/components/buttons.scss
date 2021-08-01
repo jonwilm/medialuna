@@ -5,12 +5,28 @@
   font-size: 1.1rem;
 }
 .btn-blue-white {
-  padding-left: 4rem;
-  padding-right: 4rem;
   color: $white;
   font-weight: bold;
   border-radius: 5px;
   background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.31);
+  transition: all 0.3s;
+  &:hover {
+    color: $blue;
+  }
+  &:before {
+    background: $white;
+    border-radius: 5px;
+  }
+  &:focus {
+    box-shadow: none;
+    color: $blue;
+  }
+}
+.btn-blue-white2 {
+  color: $gray;
+  border-radius: 5px;
+  background: linear-gradient(134.42deg, #BDE7E2 0%, #D1F2EE 34%, #DDF7F3 100%);
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.31);
   transition: all 0.3s;
   &:hover {
