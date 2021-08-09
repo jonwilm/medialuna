@@ -131,9 +131,14 @@
       background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #D0B070 61%);
     }
   }
+  .select-dish {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(134.42deg, #9cd3cd 0, #9cd3cd 34%, #bde7e2 100%);
+    border-image-slice: 1;
+  }
   select {
-    width: 8%;
-    margin-left: auto;
+    width: 5rem;
+    margin-right: auto;
   }
   .total-price span {
     font-size: 1.5rem;

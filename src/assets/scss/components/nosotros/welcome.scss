@@ -1,0 +1,50 @@
+.section-welcome-nosotros {
+  width: 100%;
+  height: 60vh;
+  background-image: url(../images/nosotros/bg-welcome.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.section-nosotros {
+  padding-bottom: calc(3rem + 120px);
+  .content-text-nosotros {
+    background-image: url(../images/nosotros/bg-nosotros.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .col-left {
+      .translateY {
+        // transform: translateY(-25%);
+        margin-top: -25%;
+      }      
+    }
+    .col-right {
+      p {
+        color: $gray;
+        font-weight: 300;
+        text-align: center;
+        @media (min-width: 768px) {
+          text-align: start;
+        }
+      }
+    }
+    img {
+      box-shadow: 5px 5px 10px -4px $gray-light;
+    }
+    .img-desktop {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-40%);
+    }
+  }
+  .title-nosotros {
+    font-size: 5rem;
+    color: $gray;
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+}

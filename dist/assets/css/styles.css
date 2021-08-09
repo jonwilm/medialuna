@@ -92,10 +92,21 @@ html, body {
       #navbar #pre-nav a span {
         color: #828282; }
   #navbar .navbar {
-    transition: background-color 0.3s; }
+    transition: all 0.3s; }
+    @media (min-width: 1200px) {
+      #navbar .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 45px; } }
     #navbar .navbar a {
       color: #ffffff;
       font-weight: bold; }
+    #navbar .navbar .logo-navbar {
+      transition: all 0.3s; }
+      @media (min-width: 1200px) {
+        #navbar .navbar .logo-navbar {
+          width: 50px;
+          transform: translateY(-10px); } }
     #navbar .navbar .navbar-toggler:focus {
       box-shadow: none; }
     #navbar .navbar .navbar-toggler .navbar-toggler-icon {

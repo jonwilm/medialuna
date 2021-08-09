@@ -1,0 +1,41 @@
+.section-form {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .miselaneo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    h2 {
+      font-weight: 100;
+      font-size: 3rem;
+    }
+    form {
+      .form-control {
+        font-weight: 300;
+        color: $gray-light;
+        border-color: #d4d4d4;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      small {
+        color: #333;
+        font-weight: 300;
+      }
+    }
+  }
+  .text-light {
+    color: $white
+  }
+  .text-blue {
+    color: $blue
+  }
+}

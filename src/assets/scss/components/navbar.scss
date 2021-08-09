@@ -24,10 +24,22 @@
   }
   
   .navbar {
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    @media (min-width: 1200px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 45px;
+    }
     a {
       color: $white;
       font-weight: bold;
+    }
+    .logo-navbar {
+      transition: all 0.3s;
+      @media (min-width: 1200px) {
+        width: 50px;
+        transform: translateY(-10px);
+      }
     }
     .navbar-toggler {
       &:focus {

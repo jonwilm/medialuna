@@ -149,6 +149,9 @@
       .banner-menu .text {
         font-size: 1rem; } }
 
+.section-menu .content-cards-menu .card .btn {
+  width: 80%; }
+
 .section-menu .tab {
   overflow: hidden;
   border-bottom: 3px solid transparent;

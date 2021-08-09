@@ -1,0 +1,45 @@
+.section-welcome-tienda {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../images/tienda/bg-welcome.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .content-text-tienda {
+    background: linear-gradient(269.29deg, rgba(144,204,198,0.55) 0%, #90ccc6 50%, rgba(144,204,198,0.55) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    .text-tienda {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .col-left {
+        border-right: 1px solid transparent;
+        @media (min-width: 768px) {
+          border-right: 1px solid $gray;
+        }
+      }
+      .col-right {
+        p {
+          color: $gray;
+          font-weight: 300;
+          padding-left: 3rem;
+          text-align: center;
+          @media (min-width: 768px) {
+            text-align: start;
+          }
+        }
+      }
+    }
+    .title-tienda {
+      font-size: 5rem;
+      color: $white;
+      font-weight: 100;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}
