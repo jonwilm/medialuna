@@ -15,23 +15,21 @@
 <body>
   <div id="navbar">
     <div id="pre-nav">
-      <div class="container">
-        <div class="d-flex justify-content-end me-5" style="font-size: 12px;">
-          <div class="d-none d-md-flex me-3">
-            <a href="https://goo.gl/maps/oNKYBN2FziLEDU5Q9">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Av. Pintor Felo Monzón 38, Siete Palmas, Las Palmas</span>
-            </a>
-          </div>
-          <a href="whatsapp://send?text=hola&amp;phone=828048232&amp;abid=828048232">
-            <i class="fab fa-whatsapp"></i>
-            <span class="roboto me-3">828 04 82 32</span>
-          </a>
-          <a href="tel:828048232">
-            <i class="fas fa-phone-alt"></i>
-            <span>828 04 82 32</span>
+      <div class="d-flex justify-content-end" style="font-size: 12px;">
+        <div class="d-none d-md-flex me-3">
+          <a href="https://goo.gl/maps/oNKYBN2FziLEDU5Q9">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Pintor Felo Monzón 38, Siete Palmas, Las Palmas</span>
           </a>
         </div>
+        <a href="whatsapp://send?text=hola&amp;phone=828048232&amp;abid=828048232">
+          <i class="fab fa-whatsapp"></i>
+          <span class="roboto me-3">828 04 82 32</span>
+        </a>
+        <a href="tel:828048232">
+          <i class="fas fa-phone-alt"></i>
+          <span>828 04 82 32</span>
+        </a>
       </div>
     </div>
   
@@ -47,19 +45,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menú</a>
+              <a class="nav-link active" href="menu.html">Menú</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="catering.html">Catering</a>
+              <a class="nav-link @@catering" href="catering.html">Catering</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Tienda</a>
+              <a class="nav-link @@tienda" href="tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link @@nosotros" href="nosotros.html">Nosotros</a>
             </li>
           </ul>
-          <div class="icons-perfil text-center mt-3 mt-xl-0">
+          <div class="icons-perfil mt-3 mt-xl-0">
             <a href="#">
               <i class="ms-4 fas fa-search"></i>
             </a>
@@ -91,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="section-dishes py-5">
+    <div class="section-dishes">
       <div class="container">
         <div class="row content-cards-menu">
           <div class="col-12 col-md-6 col-lg-3 mb-4">
@@ -115,7 +113,7 @@
               <div class="row">
                 <div class="col-6 col-md-12">
                   <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
-                  <div class="triangulo"></div>
+                  <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
                   <span class="text-triangulo">NUEVO</span>
                 </div>
                 <div class="col-6 col-md-12">
@@ -149,7 +147,7 @@
               <div class="row">
                 <div class="col-6 col-md-12">
                   <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
-                  <div class="triangulo"></div>
+                  <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
                   <span class="text-triangulo">NUEVO</span>
                 </div>
                 <div class="col-6 col-md-12">
@@ -356,8 +354,8 @@
     <div class="section-form py-5" style="background-image: url(assets/images/menu/bg-form.png);">
       <img class="miselaneo" src="assets/images/menu/img-form.png" alt="Miselaneo">
       <div class="container">
-        <h2 class="wow fadeInUp">¿Necesitas un menú personalizado?</h2>
-        <form class="wow fadeInUp">
+        <h2 class="">¿Necesitas un menú personalizado?</h2>
+        <form class="">
           <div class="row">
             <div class="col-12 col-md-6 mt-3">
               <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y Apellidos" required="">

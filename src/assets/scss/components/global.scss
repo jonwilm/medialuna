@@ -81,3 +81,144 @@ html, body {
     }
   }
 }
+
+.content-cards-menu {
+  .card {
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px -6px rgba(0, 0, 0, 0.35);
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .btn {
+      width: 80%;
+    }
+
+    .triangulo {
+      position: absolute;
+      top: -3px;
+      left: -4px;
+      z-index: 1;
+    }
+
+    .text-triangulo {
+      position: absolute;
+      top: 15px;
+      left: 2px;
+      z-index: 2;
+      color: #fff;
+      transform: rotate(-45deg);
+      padding: 1px 0 3px 0;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $gray-light;
+    }
+
+    .card-text {
+      font-size: 1.5rem;
+      color: $gray-light;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4rem;
+  li {
+    display: inline-block;
+    a {
+      color: $gray;
+      // float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      &:hover {
+        background-color: #bde3df;
+      }
+      &.active {
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.tab {
+  overflow: hidden;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
+  border-image-slice: 1;
+  display: flex;
+  flex-wrap: wrap;
+
+  button {
+    flex: 20%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    transition: all 0.3s;
+    color: $gray-light;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &.active {
+      color: $blue;
+    }
+  }
+}
+
+.tabcontent {
+  display: none;
+  margin-top: 2rem;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+
+  .content-btn-anadir {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    a {
+      width: 80%;
+      transform: translateY(-35%);
+    }
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

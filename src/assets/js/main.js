@@ -18,11 +18,11 @@ $(window).resize(function () {
 function changeColorNavbar() {
   if ($(window).scrollTop() > 100) {
     $(".navbar").css({
-      "background-color": "#90ccc6",
+      "background-color": "rgba(144, 204, 198, .85)",
     });
   } else {
     $(".navbar").css({
-      "background-color": "#90ccc6aa",
+      "background-color": "rgba(144, 204, 198, .85)",
     });
   }
 }
