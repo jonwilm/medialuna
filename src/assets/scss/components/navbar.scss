@@ -37,11 +37,11 @@
     @media (min-width: 1200px) {
       padding-top: 0;
       padding-bottom: 0;
-      height: 45px;
+      height: 35px;
     }
     a {
       color: $white;
-      font-weight: bold;
+      font-weight: 400;
     }
     .logo-navbar {
       transition: all 0.3s;
@@ -68,6 +68,7 @@
           padding-right: 1rem;
         }
         .nav-link {
+          font-size: 18px;
           color: $white;
           border-bottom: 1px solid transparent;
           text-align: center;
@@ -84,6 +85,7 @@
       }
     }
     .icons-perfil {
+      font-size: 18px;
       text-align: center;
       a {
         transition: all .3s;

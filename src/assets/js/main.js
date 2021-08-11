@@ -33,7 +33,7 @@ function changeDesktopNavbar() {
         height: "0px",
       });
       $(".navbar").css({
-        "height": "65px",
+        "height": "55px",
       });
       $(".logo-navbar").css({
         "transform": "translateY(0px)",
@@ -43,7 +43,7 @@ function changeDesktopNavbar() {
         height: "20px",
       });
       $(".navbar").css({
-        "height": "45px",
+        "height": "35px",
       });
       $(".logo-navbar").css({
         "transform": "translateY(-10px)",

@@ -12,6 +12,11 @@
   .content-text {
     border: 1px solid #FFF;
     background: linear-gradient(270.57deg, rgba(255,255,255,0.1) 0%, #FFF 37%, #FFF 66%, rgba(255,255,255,0.1) 100%);
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: $gray;
+    }
   }
   .dish {
     img {

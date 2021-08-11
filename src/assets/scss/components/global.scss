@@ -2,14 +2,31 @@ html, body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   color: $gray;
-  @media (max-width: 424.98px) {
+  font-size: 10px;
+  @media (min-width: 425px) {
     font-size: 12px;
   }
-  @media (max-width: 359.98px) {
-    font-size: 10px;
+  @media (min-width: 640px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1366px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 18px;
   }
   a {
     text-decoration: none;
+  }
+}
+.container {
+  @media (min-width: 1400px) {
+    max-width: 1000px;
+  }
+}
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1200px;
   }
 }
 .delay-200 {
@@ -23,6 +40,21 @@ html, body {
 }
 .delay-800 {
   animation-delay: 800ms;
+}
+.text-blue {
+  color: $blue;
+}
+.text-gray-light {
+  color: $gray-light;
+}
+.text-gray {
+  color: $gray;
+}
+.col-md-25 {
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
 }
 #redes {
   display: flex;
@@ -220,5 +252,40 @@ html, body {
 
   to {
     opacity: 1;
+  }
+}
+
+.filter {
+  border: 1px solid #e0e0e0;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  & > button {
+    height: 30px;
+  }
+  .btn-group {
+    button {
+      font-weight: 300;
+      &:disabled {
+        opacity: 1;
+      }
+    }
+    .dropdown-toggle {
+      font-weight: 300;
+      height: 30px;
+      width: 155px;
+      &:focus {
+        box-shadow: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+    .dropdown-menu {
+      width: 155px;
+      min-width: auto;
+      inset: initial !important;
+      top: 0 !important;
+      right: 0 !important;
+    }
   }
 }

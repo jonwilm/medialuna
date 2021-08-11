@@ -1,0 +1,39 @@
+.section-diferentes {
+  padding-bottom: 1rem;
+  .container {
+    background: linear-gradient(0deg, #bde3df 0, #f5fffe 100%);
+    padding-top: 3rem;
+    border: 1px solid #dff2f0;
+    h2 {
+      font-weight: 100;
+      font-size: 4rem;
+      text-align: center;
+      margin: 0;
+    }
+    .content-card {
+      transform: translateY(2rem);
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.section-letter {
+  font-family: 'Alex Brush';
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  .bg-letter {
+    background-image: url(../images/nosotros/bg-letter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-img {
+    background-image: url(../images/nosotros/bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -15,19 +15,21 @@
     }
   }
   .col-right {
+    display: flex;
+    align-items: center;
     .title {
       color: $gray-light;
       font-weight: 100;
       margin-bottom: 0;
     }
     .subtitle {
-      font-size: 4.5rem;
+      font-size: 4rem;
       color: $blue;
       font-weight: 100;
     }
     .text {
       font-weight: 300;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }

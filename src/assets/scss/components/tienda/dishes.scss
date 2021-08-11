@@ -2,27 +2,7 @@
   padding-top: 5rem;
   padding-bottom: 3rem;
   background: #fff;
-  // background: linear-gradient(180deg, #c6c6c6 0%, #c6c6c6 70%,#ebebeb 100%);
-  .filter {
-    border: 1px solid #e0e0e0;
-    background-color: #fbfbfb;
-    border-radius: 5px;
-  }
-  .btn-group {
-    button {
-      font-weight: 300;
-      &:disabled {
-        opacity: 1;
-      }
-    }
-    .dropdown-toggle {
-      font-weight: 300;
-      &:focus {
-        box-shadow: none;
-      }
-    }
-  }
   .card .btn {
-    width: 80%;
+    width: 90%;
   }
 }

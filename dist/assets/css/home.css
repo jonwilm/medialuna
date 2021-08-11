@@ -24,7 +24,8 @@
     height: 100%; }
     .section-welcome .carousel-item .content-card h1 {
       color: #90ccc6;
-      font-size: 4rem; }
+      font-size: 4rem;
+      font-weight: 400; }
     .section-welcome .carousel-item .content-card p {
       font-weight: 300; }
     .section-welcome .carousel-item .content-card .cuadro-welcome {
@@ -117,19 +118,20 @@
   .section2 .content-img .img-base {
     position: relative; }
 
-.section2 .col-right .title {
-  color: #828282;
-  font-weight: 100;
-  margin-bottom: 0; }
-
-.section2 .col-right .subtitle {
-  font-size: 4.5rem;
-  color: #90ccc6;
-  font-weight: 100; }
-
-.section2 .col-right .text {
-  font-weight: 300;
-  font-size: 1.2rem; }
+.section2 .col-right {
+  display: flex;
+  align-items: center; }
+  .section2 .col-right .title {
+    color: #828282;
+    font-weight: 100;
+    margin-bottom: 0; }
+  .section2 .col-right .subtitle {
+    font-size: 4rem;
+    color: #90ccc6;
+    font-weight: 100; }
+  .section2 .col-right .text {
+    font-weight: 300;
+    font-size: 1rem; }
 
 .banner-menu {
   background-image: url(../images/home/bg-menu.png);
@@ -137,12 +139,12 @@
   background-position: center;
   background-size: cover; }
   .banner-menu .title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: #ffffff;
     font-weight: 100; }
   .banner-menu .text {
     font-weight: 300;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     font-size: .8rem; }
     @media (min-width: 768px) {
@@ -150,7 +152,7 @@
         font-size: 1rem; } }
 
 .section-menu .content-cards-menu .card .btn {
-  width: 80%; }
+  width: 90%; }
 
 .section-delivery {
   background-image: url(../images/home/bg-delivery.png);
@@ -165,6 +167,10 @@
   .section-delivery .content-text {
     border: 1px solid #FFF;
     background: linear-gradient(270.57deg, rgba(255, 255, 255, 0.1) 0%, #FFF 37%, #FFF 66%, rgba(255, 255, 255, 0.1) 100%); }
+    .section-delivery .content-text p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #4f4f4f; }
   .section-delivery .dish img {
     transition: all .3s; }
   .section-delivery .dish:hover img {
@@ -197,7 +203,17 @@
     margin-top: 3rem; }
     .section-hablamos .text-instagram p {
       margin-bottom: .5rem; }
-  .section-hablamos .galeria img {
-    transition: all .3s; }
-    .section-hablamos .galeria img:hover {
-      transform: scale(1.1); }
+  .section-hablamos .galeria {
+    display: flex; }
+    .section-hablamos .galeria img {
+      transition: all .3s;
+      margin: 1rem;
+      width: calc((100% / 6) - 2rem); }
+      .section-hablamos .galeria img:hover {
+        transform: scale(1.1); }
+      @media (max-width: 600px) {
+        .section-hablamos .galeria img {
+          width: calc(100% - 2rem); } }
+    @media (max-width: 600px) {
+      .section-hablamos .galeria {
+        overflow-x: auto; } }

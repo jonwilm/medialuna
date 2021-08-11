@@ -45,16 +45,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link @@menu" href="menu.html">Menú</a>
+              <a class="nav-link py-xl-0 @@menu" href="menu.html">menú</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="catering.html">Catering</a>
+              <a class="nav-link py-xl-0 active" href="catering.html">catering</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@tienda" href="tienda.html">Tienda</a>
+              <a class="nav-link py-xl-0 @@tienda" href="tienda.html">tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@nosotros" href="nosotros.html">Nosotros</a>
+              <a class="nav-link py-xl-0 @@nosotros" href="nosotros.html">nosotros</a>
             </li>
           </ul>
           <div class="icons-perfil mt-3 mt-xl-0">
@@ -92,15 +92,15 @@
     <div class="section-dishes">
       <div class="container">
         <div class="row mb-3">
-          <div class="col-12 col-sm-8 col-md-9">
+          <div class="col-12 col-sm-6">
             <p class="mb-0">1-24 de 27 resultados</p>
           </div>
-          <div class="col-12 col-sm-4 col-md-3 mt-3 mt-sm-0 d-grid gap-2">
+          <div class="col-12 col-sm-6 text-end mt-3 mt-sm-0">
             <div class="filter btn-group" role="group">
-              <button type="button" class="btn w-50" disabled>Ordenar por:</button>
-              <div class="btn-group w-50" role="group">
-                <button id="filter-order" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  Destacados
+              <button type="button" class="btn py-0" disabled>Ordenar por:</button>
+              <div class="btn-group" role="group">
+                <button id="filter-order" type="button" class="btn dropdown-toggle py-0" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destacados<i class="fa fa-angle-down ms-3"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="filter-order">
                   <li><a class="dropdown-item" href="#">Destacados</a></li>
@@ -245,20 +245,20 @@
           </div>
         </div>
         <div class="text-center mt-5">
-            <ul class="pagination">
-              <div>
-                <li><a class="prev" href="#"><i class="fa fa-angle-left"></i> Anterior</a></li>
-              </div>
-              <div>
-                <li><a class="active" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-              </div>
-              <div>
-                <li><a class="next" href="#">Siguiente <i class="fa fa-angle-right"></i></a></li>
-              </div>
-            </ul>
-          </div>
+          <ul class="pagination">
+            <div>
+              <li><a class="prev" href="#"><i class="fa fa-angle-left"></i> Anterior</a></li>
+            </div>
+            <div>
+              <li><a class="active" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </div>
+            <div>
+              <li><a class="next" href="#">Siguiente <i class="fa fa-angle-right"></i></a></li>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="section-form py-5" style="background-image: url(assets/images/catering/bg-form.png);">
@@ -297,8 +297,8 @@
  
     <div class="section-footer1 py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-3 wow fadeInUp">
+        <div class="content-footer row mx-auto">
+          <div class="col-12 col-md-25">
             <h5>Nosotros</h5>
             <ul>
               <li>
@@ -306,7 +306,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-3 wow fadeInUp">
+          <div class="col-12 col-md-25">
             <h5>Servicios</h5>
             <ul>
               <li>
@@ -314,7 +314,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-3 wow fadeInUp">
+          <div class="col-12 col-md-25">
             <h5>Legal</h5>
             <ul>
               <li>
@@ -322,7 +322,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-3 wow fadeInUp">
+          <div class="col-12 col-md-25">
             <h5>Nuestras Redes</h5>
             <div id="redes">
               <a class="me-2" href="">
@@ -352,17 +352,22 @@
     </div>
     <div class="section-footer2">
       <div class="text-center">
-        <img class="img-fluid" src="assets/images/home/dish.png" alt="dish">
-        <img class="img-fluid" src="assets/images/home/dish.png" alt="dish">
-        <img class="img-fluid" src="assets/images/home/dish.png" alt="dish">
-        <img class="img-fluid" src="assets/images/home/dish.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago1.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago2.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago3.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago4.png" alt="dish">
       </div>
     </div>
     <div class="section-footer3">
-      <div class="text-center">
+      <div class="container d-flex align-items-center justify-content-between">
         <small>
-          <p class="mb-0 wow fadeIn">
+          <p class="mb-0">
             &copy; 2021 La Cocina de Medialuna SL Todos los derechos reservados  
+          </p>
+        </small>
+        <small>
+          <p class="mb-0">
+            Web diseñada por Volcán Studio 
           </p>
         </small>
       </div>

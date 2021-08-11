@@ -30,14 +30,21 @@
     color: $white;
   }
 }
+.content-footer {
+  @media (min-width: 1200px) {
+    width: 75%;
+  }
+}
 .section-footer2 {
   padding: .5rem 0;
   img {
-    width: 5%;
+    width: calc(65px - 1rem);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 .section-footer3 {
-  padding: .5rem 0;
+  padding: .2rem 0;
   background-color: #4f4f4f;
   color: $white;
 }
