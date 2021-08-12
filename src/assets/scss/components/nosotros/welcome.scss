@@ -16,6 +16,10 @@
     background-size: cover;
     position: relative;
     .col-left {
+      @media (min-width: 1600px) {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
       .translateY {
         // transform: translateY(-25%);
         margin-top: -25%;

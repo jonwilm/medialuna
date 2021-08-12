@@ -15,6 +15,10 @@
     background-position: center;
     background-size: cover;
     position: relative; }
+    @media (min-width: 1600px) {
+      .section-nosotros .content-text-nosotros .col-left {
+        flex: 0 0 auto;
+        width: 41.66666667%; } }
     .section-nosotros .content-text-nosotros .col-left .translateY {
       margin-top: -25%; }
     .section-nosotros .content-text-nosotros .col-right p {
@@ -40,19 +44,19 @@
         text-align: start; } }
 
 .section-diferentes {
-  padding-bottom: 1rem; }
-  .section-diferentes .container {
+  padding: 1rem; }
+  .section-diferentes .container-fluid {
     background: linear-gradient(0deg, #bde3df 0, #f5fffe 100%);
     padding-top: 3rem;
     border: 1px solid #dff2f0; }
-    .section-diferentes .container h2 {
+    .section-diferentes .container-fluid h2 {
       font-weight: 100;
       font-size: 4rem;
       text-align: center;
       margin: 0; }
-    .section-diferentes .container .content-card {
+    .section-diferentes .container-fluid .content-card {
       transform: translateY(2rem); }
-      .section-diferentes .container .content-card .card {
+      .section-diferentes .container-fluid .content-card .card {
         background-color: #ffffff;
         border: 1px solid #e0e0e0;
         font-weight: 300; }

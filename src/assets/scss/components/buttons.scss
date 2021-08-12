@@ -12,12 +12,13 @@
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.31);
   transition: all 0.3s;
   &:hover {
-    color: $blue;
+    color: $gray;
+    background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #9CD3CD 100%);
   }
-  &:before {
-    background: $white;
-    border-radius: 5px;
-  }
+  // &:before {
+  //   background: $white;
+  //   border-radius: 5px;
+  // }
   &:focus {
     box-shadow: none;
     color: $blue;
@@ -30,12 +31,13 @@
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.31);
   transition: all 0.3s;
   &:hover {
-    color: $blue;
+    color: $white;
+    background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #9CD3CD 100%);
   }
-  &:before {
-    background: $white;
-    border-radius: 5px;
-  }
+  // &:before {
+  //   background: $white;
+  //   border-radius: 5px;
+  // }
   &:focus {
     box-shadow: none;
     color: $blue;
