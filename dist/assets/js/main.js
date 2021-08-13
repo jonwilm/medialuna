@@ -59,16 +59,11 @@ function changeDesktopNavbar() {
   }
 }
 
-$(function () {
-  $(".box").click(function () {
-    $("html, body").animate(
-      { scrollTop: $("section.section2").offset().top },
-      "slow"
-      );
-      return false;
-    });
-  });
-  
+$(".box").click(function() {
+  $("html, body").animate({ scrollTop: $("section.section2").offset().top }, "slow");
+  return false;
+});
+
 function openCity(evt, cardMenus) {
   var i, tabcontent, tablinks;
   tabcontent = document.querySelectorAll(".tabcontent");
@@ -82,4 +77,47 @@ function openCity(evt, cardMenus) {
   document.getElementById(cardMenus).style.display = "block";
   evt.currentTarget.className += " active";
 }
-  
+
+let cantidad = $('#cantidad');
+let min = parseInt(cantidad.attr('min'));
+let max = parseInt(cantidad.attr('max'));
+$('#mas, #menos').click("on", function(e) {
+  e.preventDefault();
+  let current_value = parseInt(cantidad.val());
+  let classname = $(this).attr("id");
+  if (classname === "menos") {
+    if (current_value == min) {
+      return;
+    } else {
+      cantidad.val(current_value - 1);
+    }
+  } else {
+    if (current_value == max) {
+      return;
+    } else {
+      cantidad.val(current_value + 1);
+    }
+  }
+})
+cantidad.change(function() {
+  if (parseInt(cantidad.val()) < min) {
+    cantidad.val(min)
+  } else if (parseInt(cantidad.val()) > max) {
+    cantidad.val(max)
+  }
+})
+
+let shoppingCart = 'close'
+$('#btn-shopping-cart').click(function() {
+  if (shoppingCart == 'close') {
+    $('#shopping-cart').css('right', '0%')
+    shoppingCart = 'open'
+  } else {
+    $('#shopping-cart').css('right', '-100%')
+    shoppingCart = 'close'
+  }
+})
+$('#close-shopping-cart').click(function() {
+  $('#shopping-cart').css('right', '-100%')
+  shoppingCart = 'close'
+})

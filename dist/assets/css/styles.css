@@ -226,6 +226,110 @@ html, body {
     top: 0 !important;
     right: 0 !important; }
 
+#shopping-cart {
+  position: fixed;
+  right: -100%;
+  top: 65px;
+  width: 60vw;
+  height: calc(100vh - 65px);
+  background: #ffffff;
+  padding: 1rem;
+  z-index: 1000;
+  transition: all 0.3s; }
+  @media (min-width: 768px) {
+    #shopping-cart {
+      width: 45vw; } }
+  @media (min-width: 1200px) {
+    #shopping-cart {
+      top: 55px;
+      width: 25vw;
+      height: calc(100vh - 55px); } }
+  #shopping-cart .cart-header {
+    display: flex;
+    justify-content: space-between; }
+    #shopping-cart .cart-header p {
+      font-size: 1.2rem;
+      font-weight: 300; }
+    #shopping-cart .cart-header a {
+      text-decoration: none;
+      color: #828282; }
+      #shopping-cart .cart-header a:hover {
+        color: #4f4f4f; }
+  #shopping-cart .cart-scroll {
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: auto; }
+  #shopping-cart .cart-content .card {
+    text-align: end; }
+    #shopping-cart .cart-content .card a {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: #828282;
+      margin-right: 5px; }
+      #shopping-cart .cart-content .card a:hover {
+        color: #4f4f4f; }
+    #shopping-cart .cart-content .card .card-body {
+      text-align: center;
+      padding: 0 0.5rem 0; }
+      #shopping-cart .cart-content .card .card-body h5 {
+        font-weight: 300;
+        font-size: 0.8rem; }
+      #shopping-cart .cart-content .card .card-body p {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 0; }
+  #shopping-cart .cart-content .content-cantidad {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.125); }
+    #shopping-cart .cart-content .content-cantidad #cantidad {
+      text-align: center;
+      border: none;
+      background: transparent;
+      margin: 0;
+      color: #4f4f4f;
+      font-size: 1rem;
+      width: 2rem; }
+    #shopping-cart .cart-content .content-cantidad #cantidad:focus-visible {
+      outline: none; }
+    #shopping-cart .cart-content .content-cantidad #cantidad::-webkit-outer-spin-button,
+    #shopping-cart .cart-content .content-cantidad #cantidad::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    #shopping-cart .cart-content .content-cantidad #mas,
+    #shopping-cart .cart-content .content-cantidad #menos {
+      background: transparent;
+      border: none;
+      color: #4f4f4f;
+      font-size: 0.8rem; }
+  #shopping-cart .cart-sugeridos {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 1rem; }
+    #shopping-cart .cart-sugeridos .card {
+      display: inline-block;
+      white-space: normal;
+      width: 40%; }
+      #shopping-cart .cart-sugeridos .card .card-body {
+        text-align: center;
+        padding: 0 0.5rem 0; }
+        #shopping-cart .cart-sugeridos .card .card-body h5 {
+          font-weight: 300;
+          font-size: 0.8rem; }
+        #shopping-cart .cart-sugeridos .card .card-body p {
+          font-weight: 400;
+          font-size: 1rem;
+          margin-bottom: 0; }
+        #shopping-cart .cart-sugeridos .card .card-body a {
+          text-decoration: none;
+          color: #90ccc6; }
+          #shopping-cart .cart-sugeridos .card .card-body a:hover {
+            color: #4f4f4f; }
+  #shopping-cart .cart-total {
+    text-align: center; }
+    #shopping-cart .cart-total p {
+      font-size: 1.2rem; }
+
 #navbar {
   position: fixed;
   top: 0;
@@ -252,6 +356,8 @@ html, body {
         #navbar #pre-nav a:hover span {
           color: #90ccc6; }
   #navbar .navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: all 0.3s; }
     @media (min-width: 1200px) {
       #navbar .navbar {
@@ -268,6 +374,7 @@ html, body {
           width: 50px;
           transform: translateY(-10px); } }
     #navbar .navbar .navbar-toggler {
+      font-size: 18px;
       border: none; }
       #navbar .navbar .navbar-toggler:focus {
         box-shadow: none; }
@@ -301,9 +408,13 @@ html, body {
         #navbar .navbar .icons-perfil {
           width: 25vw;
           text-align: end; } }
-  @media (min-width: 1200px) {
-    #navbar .navbar-brand {
-      width: 25vw; } }
+  #navbar .navbar-brand {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    @media (min-width: 1200px) {
+      #navbar .navbar-brand {
+        width: 25vw; } }
 
 .btn-rounded {
   line-height: 1.3; }

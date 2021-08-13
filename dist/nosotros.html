@@ -64,7 +64,7 @@
             <a href="#">
               <i class="ms-4 fas fa-user-alt"></i>
             </a>
-            <a href="#">
+            <a id="btn-shopping-cart" href="#">
               <i class="ms-4 me-4 fas fa-shopping-bag"></i>
             </a>
           </div>
@@ -312,6 +312,110 @@
             Web diseñada por Volcán Studio 
           </p>
         </small>
+      </div>
+    </div>
+    <div id="shopping-cart">
+      <div class="cart-header">
+        <p>Tu bolsa de compra</p>
+        <a id="close-shopping-cart" href="#"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="cart-scroll">
+        <div class="cart-content">
+          <div class="card">
+            <div class="row">
+              <div class="col-5 pe-0">
+                <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+              </div>
+              <div class="col-7 ps-0">
+                <a href="#"><i class="fa fa-trash"></i></a>
+                <div class="card-body">
+                  <h5 class="card-title m-0">Pescado en salsa verde</h5>
+                  <p class="card-text">10,00€</p>
+                  <div class="content-cantidad">
+                    <button id="menos">
+                      <span class="fa fa-minus"></span>
+                    </button>
+                    <input type="number" name="cantidad" id="cantidad" min="1" max="100" step="1" value="1">
+                    <button id="mas">
+                      <span class="fa fa-plus"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-5 pe-0">
+                <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+              </div>
+              <div class="col-7 ps-0">
+                <a href="#"><i class="fa fa-trash"></i></a>
+                <div class="card-body">
+                  <h5 class="card-title m-0">Pescado en salsa verde</h5>
+                  <p class="card-text">10,00€</p>
+                  <div class="content-cantidad">
+                    <button id="menos">
+                      <span class="fa fa-minus"></span>
+                    </button>
+                    <input type="number" name="cantidad" id="cantidad" min="1" max="100" step="1" value="1">
+                    <button id="mas">
+                      <span class="fa fa-plus"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="cart-sugeridos">
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="cart-total">
+          <p>Total: 10,00&euro;</p>
+          <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out px-5" href="#">finalizar compra</a>
+        </div>
       </div>
     </div>
     
