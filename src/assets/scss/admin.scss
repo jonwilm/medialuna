@@ -51,5 +51,25 @@
         }
       }
     }
+    .address-default {
+      font-weight: 300;
+      color: $gray-light;
+    }
+    .address {
+      p {
+        color: #222;
+        font-size: 0.8rem;
+      }
+      a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 0.8rem;
+        transition: all 0.3s;
+        &:hover {
+          color: #000;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }

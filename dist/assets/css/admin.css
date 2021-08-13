@@ -36,3 +36,20 @@
 .section-admin .content .table-perfil tbody tr td {
   font-weight: 400;
   padding-bottom: 1rem; }
+
+.section-admin .content .address-default {
+  font-weight: 300;
+  color: #828282; }
+
+.section-admin .content .address p {
+  color: #222;
+  font-size: 0.8rem; }
+
+.section-admin .content .address a {
+  text-decoration: none;
+  color: #4f4f4f;
+  font-size: 0.8rem;
+  transition: all 0.3s; }
+  .section-admin .content .address a:hover {
+    color: #000;
+    font-weight: 600; }
