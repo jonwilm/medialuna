@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include("partials/head.html", {"title": "Perfil - MediaLuna"})
+  
+</head>
+<body>
+  @@include("partials/navbar.html")
+  <link href="assets/css/admin.min.css" rel="stylesheet" />
+  
+  <main>
+    <div class="section-welcome-admin"></div>
+    
+    <div class="section-admin">
+      <div class="container-fluid py-3">
+        <div class="row">
+          <div class="sidebar col-12 col-md-3">
+            <div class="p-5">
+              <a class="" href="perfil.html"><p>Perfil</p></a>
+              <a class="" href="direcciones.html"><p>Direcciones</p></a>
+              <a class="" href="pedidos.html"><p>Pedidos</p></a>
+              <a class="active" href="ayuda.html"><p>Ayuda</p></a>
+              <a class="" href="#"><p>Cerrar sesión</p></a>
+            </div>
+          </div>
+          <div class="content col-12 col-md-9">
+            <div class="p-5">
+              <p class="title">Ayuda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    @@include("partials/shopping-cart.html")
+    
+  </main>
+  
+  @@include("partials/scripts.html")
+</body>
+</html>
