@@ -78,11 +78,11 @@ function openCity(evt, cardMenus) {
   evt.currentTarget.className += " active";
 }
 
-let cantidad = $('#cantidad');
-let min = parseInt(cantidad.attr('min'));
-let max = parseInt(cantidad.attr('max'));
 $('#mas, #menos').click("on", function(e) {
   e.preventDefault();
+  let cantidad = $(this).siblings('.cantidad');
+  let min = parseInt(cantidad.attr('min'));
+  let max = parseInt(cantidad.attr('max'));
   let current_value = parseInt(cantidad.val());
   let classname = $(this).attr("id");
   if (classname === "menos") {
@@ -99,11 +99,13 @@ $('#mas, #menos').click("on", function(e) {
     }
   }
 })
-cantidad.change(function() {
-  if (parseInt(cantidad.val()) < min) {
-    cantidad.val(min)
-  } else if (parseInt(cantidad.val()) > max) {
-    cantidad.val(max)
+$('.cantidad').change(function() {
+  let min = parseInt($(this).attr('min'));
+  let max = parseInt($(this).attr('max'));
+  if (parseInt($(this).val()) < min) {
+    $(this).val(min)
+  } else if (parseInt($(this).val()) > max) {
+    $(this).val(max)
   }
 })
 

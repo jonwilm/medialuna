@@ -252,7 +252,8 @@ html, body {
       font-weight: 300; }
     #shopping-cart .cart-header a {
       text-decoration: none;
-      color: #828282; }
+      color: #828282;
+      cursor: pointer; }
       #shopping-cart .cart-header a:hover {
         color: #4f4f4f; }
   #shopping-cart .cart-scroll {
