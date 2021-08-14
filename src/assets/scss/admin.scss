@@ -36,6 +36,18 @@
       font-size: 1.2rem;
       color: $blue;
     }
+    .text-gray {
+      font-weight: 400;
+      color: $gray;
+    }
+    .text-gray-light {
+      font-weight: 300;
+      color: $gray-light;
+    }
+    .text-gray-bold {
+      font-weight: 700;
+      color: $gray;
+    }
     .table-perfil {
       tbody {
         tr {
@@ -50,10 +62,6 @@
           }
         }
       }
-    }
-    .address-default {
-      font-weight: 300;
-      color: $gray-light;
     }
     .address {
       p {
@@ -70,6 +78,102 @@
           font-weight: 600;
         }
       }
+    }
+    .imgprogressbar {
+      position: relative;
+      height: 50px;
+      margin-bottom: 0.5rem;
+      img {
+        position: absolute;
+        width: 50px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      img:nth-child(1) {
+        left: 5%;
+      }
+      img:nth-child(2) {
+        left: 35%;
+      }
+      img:nth-child(3) {
+        left: 65%;
+      }
+      img:nth-child(4) {
+        left: 95%;
+      }
+    }
+    .progressbar {
+      position: relative;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      .bar-base {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background: #f2f2f2;
+        box-shadow: inset 0 0 5px 0 rgba($color: #000000, $alpha: 0.25);
+        border-radius: 2px;
+        .bar-check {
+          width: 35%;
+          height: 5px;
+          background: linear-gradient(180deg, #BDE3DF 13%, #D1FFFA 30%, #9DE1DA 67%, #BDE3DF 85%, #97CDC7 100%);
+          border-radius: 2px;
+          div {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: #c8c8c8;
+            border-radius: 50%;
+            box-shadow: inset 0 0 5px 0 rgba($color: #000000, $alpha: 0.25);
+          }
+          div:nth-child(1) {
+            left: 5%;
+            background: radial-gradient(circle, #D1FFFA 0%, #9DE1DA 62%, #97CDC7 100%);
+          }
+          div:nth-child(2) {
+            left: 35%;
+            background: radial-gradient(circle, #D1FFFA 0%, #9DE1DA 62%, #97CDC7 100%);
+          }
+          div:nth-child(3) {
+            left: 65%;
+          }
+          div:nth-child(4) {
+            left: 95%;
+          }
+        }
+      }
+    }
+    .textprogressbar {
+      position: relative;
+      height: 30px;
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $gray;
+        font-weight: 700;
+      }
+      span:nth-child(1) {
+        left: 5%;
+      }
+      span:nth-child(2) {
+        left: 35%;
+      }
+      span:nth-child(3) {
+        left: 65%;
+      }
+      span:nth-child(4) {
+        left: 95%;
+      }
+    }
+    .pedido {
+      border-top: 1px solid #BDE3DF;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      padding-left: 1rem;
     }
   }
 }
