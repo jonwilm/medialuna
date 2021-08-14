@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include("partials/head.html", {"title": "Mi Pedido - MediaLuna"})
+  
+</head>
+<body>
+  @@include("partials/navbar.html")
+  <link href="assets/css/admin.min.css" rel="stylesheet" />
+  
+  <main>
+    <div class="section-welcome-admin"></div>
+    
+    <div class="section-admin">
+      <div class="container-fluid content pt-3">
+        <div class="row">
+          <div class="col-12 col-md-9">
+            <div class="px-5 pt-5">
+              <p class="text-gray-light"><i class="fa fa-angle-left me-2"></i>Seguir comprando</p>
+              <div class="ps-3">
+                <p class="pedido-title">1. Promociones</p>
+                <div class="ps-3">
+                  <p class="text-gray-light">Introduce tus codigos promocionales</p>
+                  <div class="codigos input-group">
+                    <input type="text" class="form-control" aria-describedby="button-aplicar">
+                    <button class="btn btn-custom btn-rounded btn-blue-white btn-center-out" type="button" id="button-aplicar">Aplicar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-mipedido-section"></div>
+      <div class="container-fluid content">
+        <div class="row">
+          <div class="col-12 col-md-9">
+            <div class="px-5 pt-5">
+              <div class="ps-3">
+                <p class="pedido-title">2. Entrega</p>
+                <div class="ps-3">
+                  <p class="text-gray-light">Escoge el tipo de entrega de tu pedido</p>
+                  <input type="radio" class="form-check-input" name="tipo-entrega" id="tipo-entrega1"/>
+                  <label class="form-check-label" for="tipo-entrega1">
+                    <div class="radiobtn btn btn-custom btn-rounded btn-blue-white btn-center-out">Recoger</div>
+                  </label>
+                  <input type="radio" class="form-check-input" name="tipo-entrega" id="tipo-entrega2"/>
+                  <label class="form-check-label" for="tipo-entrega2">
+                    <div class="radiobtn btn btn-custom btn-rounded btn-blue-white btn-center-out">Enviar</div>
+                  </label>
+                  <input type="radio" class="form-check-input" name="tipo-entrega" id="tipo-entrega13"/>
+                  <label class="form-check-label" for="tipo-entrega13">
+                    <div class="radiobtn btn btn-custom btn-rounded btn-blue-white btn-center-out">Reservar</div>
+                  </label>
+                  <p class="text-gray-light pt-3">Dirección por defecto</p>
+                  <div class="address address-pedido">
+                    <p>NOMBRE</p>
+                    <p>Av. Alcalde José Ramirez Bethencourt, 13</p>
+                    <p>35004</p>
+                    <p>Las Palmas de Gran Canaria</p>
+                    <a href="">Escoger otra</a>
+                    <span>|</span>
+                    <a href="">Introducir nueva</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-mipedido-section"></div>
+      <div class="container-fluid content">
+        <div class="row">
+          <div class="col-12 col-md-9">
+            <div class="px-5 py-5">
+              <div class="ps-3">
+                <p class="pedido-title">3. Metodo de Pago</p>
+                <div class="ps-3">
+                  <p class="text-gray-light">Reaiza el pago online mediante</p>
+                  <input type="radio" class="form-check-input" name="tipo-pago" id="tipo-pago1"/>
+                  <label class="form-check-label" for="tipo-pago1">
+                    <div class="radiobtn btn btn-custom btn-rounded btn-blue-white btn-center-out">Tarjeta</div>
+                  </label>
+                  <input type="radio" class="form-check-input" name="tipo-pago" id="tipo-pago2"/>
+                  <label class="form-check-label" for="tipo-pago2">
+                    <div class="radiobtn btn btn-custom btn-rounded btn-blue-white btn-center-out">Bizum</div>
+                  </label>
+                  <input type="radio" class="form-check-input" name="tipo-pago" id="tipo-pago13"/>
+                  <label class="form-check-label" for="tipo-pago13">
+                    <div class="radiobtn btn btn-custom btn-rounded btn-blue-white btn-center-out">PayPal</div>
+                  </label>
+                  <div class="pasarela-pago mt-3">
+                    Pasarela de pago o lo que sea...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    @@include("partials/shopping-cart.html")
+    
+  </main>
+  
+  @@include("partials/scripts.html")
+</body>
+</html>

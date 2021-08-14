@@ -175,5 +175,66 @@
       padding-top: 1rem;
       padding-left: 1rem;
     }
+    .pedido-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: $blue;
+      border-bottom: 1px solid #BDE3DF;
+    }
+    .codigos {
+      width: 100%;
+      @media (min-width: 600px) {
+        width: 50%;
+      }
+      @media (min-width: 992px) {
+        width: 40%;
+      }
+    }
+    .address-pedido p {
+      font-size: 1rem;
+    }
+  }
+  .bg-mipedido-section {
+    height: 3rem;
+    background-image: url(../images/bg-mipedido-section.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  // width: 30%;
+  .form-check-label {
+    width: 30%;
+  }
+  .radiobtn {
+    width: 100%;
+    opacity: 0.5;
+  }
+  input[type="radio"]:checked+label .radiobtn {
+    color: $white;
+    background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #9CD3CD 100%);
+    opacity: 1;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  .pasarela-pago {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BDBDBD;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+  }
+  .content-ayuda {
+    width: 100%;
+    height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BDBDBD;
+    background-color: #f7f7f7;
+    border-radius: 2px;
   }
 }
