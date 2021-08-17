@@ -244,6 +244,7 @@ html, body {
 
 #shopping-cart {
   position: fixed;
+  right: -100%;
   top: 65px;
   width: 60vw;
   height: calc(100vh - 65px);
@@ -274,9 +275,7 @@ html, body {
   #shopping-cart .cart-scroll {
     height: calc(100% - 50px);
     overflow-x: hidden;
-    overflow-y: auto;
-    cursor: -webkit-grab;
-    cursor: grab; }
+    overflow-y: auto; }
   #shopping-cart .cart-content .card {
     text-align: end; }
     #shopping-cart .cart-content .card a {
@@ -323,7 +322,10 @@ html, body {
   #shopping-cart .cart-sugeridos {
     white-space: nowrap;
     overflow-x: auto;
-    padding-bottom: 1rem; }
+    cursor: -webkit-grab;
+    cursor: grab; }
+    #shopping-cart .cart-sugeridos::-webkit-scrollbar {
+      display: none; }
     #shopping-cart .cart-sugeridos .card {
       display: inline-block;
       white-space: normal;

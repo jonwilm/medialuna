@@ -313,6 +313,7 @@ html, body {
 
 #shopping-cart {
   position: fixed;
+  right: -100%;
   top: 65px;
   width: 60vw;
   height: calc(100vh - 65px);
@@ -348,7 +349,6 @@ html, body {
     height: calc(100% - 50px);
     overflow-x: hidden;
     overflow-y: auto;
-    cursor: grab;
   }
   .cart-content {
     .card {
@@ -409,7 +409,10 @@ html, body {
   .cart-sugeridos {
     white-space: nowrap;
     overflow-x: auto;
-    padding-bottom: 1rem;
+    cursor: grab;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .card {
       display: inline-block;
       white-space: normal;
