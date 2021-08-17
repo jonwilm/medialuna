@@ -63,7 +63,13 @@ html, body {
   display: flex;
   a {
     img {
-      height: 16px;
+      width: 25px;
+      transition: all 0.3s;
+    }
+    &:hover {
+      img {
+        transform: scale(0.8);
+      }
     }
   }
   .red {
@@ -74,46 +80,47 @@ html, body {
     transition-property: color;
     transition-duration: 0.3s;
     border-radius: 3px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    &:before {
-      border-radius: 3px;
-      width: 30px;
-      height: 30px;
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: scaleY(0);
-      transform-origin: 50% 100%;
-      transition-property: transform;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-out;
-    }
-    &.fb:before {
-      background-color: #3b5998;
-    }
-    &.ig:before {
-      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #bc1888 75%, #833ab4 100%) !important;
-    }
-    &.ta:before {
-      background-color: #00af87;
-    }
-    &.go:before {
-      background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
-    }
-    &.fb:hover:before,
-    &.ig:hover:before,
-    &.ta:hover:before,
-    &.go:hover:before {
-      transform: scaleY(1);
-    }
+    // &:before {
+    //   border-radius: 3px;
+    //   width: 30px;
+    //   height: 30px;
+    //   content: "";
+    //   position: absolute;
+    //   z-index: -1;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   transform: scaleY(0);
+    //   transform-origin: 50% 100%;
+    //   transition-property: transform;
+    //   transition-duration: 0.3s;
+    //   transition-timing-function: ease-out;
+    // }
+    // &.fb:before {
+    //   background-color: #3b5998;
+    // }
+    // &.ig:before {
+    //   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #bc1888 75%, #833ab4 100%) !important;
+    // }
+    // &.ta:before {
+    //   background-color: #00af87;
+    // }
+    // &.go:before {
+    //   background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    // }
+    // &.fb:hover:before,
+    // &.ig:hover:before,
+    // &.ta:hover:before,
+    // &.go:hover:before {
+    //   transform: scaleY(1);
+    // }
+    
   }
 }
 
