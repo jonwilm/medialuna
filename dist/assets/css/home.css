@@ -143,7 +143,7 @@
     color: #ffffff;
     font-weight: 100; }
   .banner-menu .text {
-    font-weight: 300;
+    font-weight: 600;
     width: 50%;
     margin: 0 auto;
     font-size: .8rem; }
@@ -165,7 +165,8 @@
     font-size: 3rem;
     color: #ffffff; }
   .section-delivery .content-text {
-    border: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
     background: linear-gradient(270.57deg, rgba(255, 255, 255, 0.1) 0%, #FFF 37%, #FFF 66%, rgba(255, 255, 255, 0.1) 100%); }
     .section-delivery .content-text p {
       font-size: 1.1rem;

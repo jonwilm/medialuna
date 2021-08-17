@@ -77,12 +77,16 @@
           text-align: center;
           transition: all 0.3s;
           &.active {
-            border-bottom: 1px solid $white;
+            color: $gray-light;
+            font-weight: 600;
+            // border-bottom: 1px solid $white;
           }
         }
         &:hover {
           .nav-link {
-            border-bottom: 1px solid $white;
+            color: $gray-light;
+            font-weight: 600;
+            // border-bottom: 1px solid $white;
           }
         }
       }

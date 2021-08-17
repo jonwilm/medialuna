@@ -14,13 +14,13 @@
     font-size: 4rem;
     color: #4f4f4f;
     font-weight: 100;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center; }
 
 .section-content {
   background-image: url(../images/legal/bg-content.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: contain; }
   .section-content h4 {
     font-size: 2.5rem;

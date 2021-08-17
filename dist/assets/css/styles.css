@@ -157,10 +157,6 @@ html, body {
 
 .tab {
   overflow: hidden;
-  border-bottom: 3px solid transparent;
-  -o-border-image: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
-     border-image: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
-  border-image-slice: 1;
   display: flex;
   flex-wrap: wrap; }
   .tab button {
@@ -179,6 +175,11 @@ html, body {
       color: #90ccc6; }
     .tab button.active {
       color: #90ccc6; }
+
+.hr-tab {
+  margin: 0;
+  height: 3px !important;
+  background: radial-gradient(circle, #9CD3CD 0%, #BDE7E2 34%, #FFFFFF 94%); }
 
 .tabcontent {
   display: none;
@@ -205,7 +206,6 @@ html, body {
     opacity: 1; } }
 
 .filter {
-  border: 1px solid #e0e0e0;
   background-color: #fbfbfb;
   border-radius: 5px; }
   .filter > button {
@@ -226,19 +226,31 @@ html, body {
     width: 155px;
     min-width: auto;
     inset: initial !important;
-    top: 0 !important;
-    right: 0 !important; }
+    top: 100% !important;
+    right: 0 !important;
+    transform: none !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: transparent; }
+  .filter .label-filter-order {
+    border: 1px solid #e0e0e0;
+    border-right: none; }
+  .filter #filter-order {
+    border: 1px solid #e0e0e0;
+    border-left: none; }
+  .filter #filter-order.show {
+    border-bottom-color: transparent;
+    border-bottom-right-radius: 0px; }
 
 #shopping-cart {
   position: fixed;
-  right: -100%;
   top: 65px;
   width: 60vw;
   height: calc(100vh - 65px);
   background: #ffffff;
   padding: 1rem;
   z-index: 1000;
-  transition: all 0.3s; }
+  transition: all 1.5s; }
   @media (min-width: 768px) {
     #shopping-cart {
       width: 45vw; } }
@@ -262,7 +274,9 @@ html, body {
   #shopping-cart .cart-scroll {
     height: calc(100% - 50px);
     overflow-x: hidden;
-    overflow-y: auto; }
+    overflow-y: auto;
+    cursor: -webkit-grab;
+    cursor: grab; }
   #shopping-cart .cart-content .card {
     text-align: end; }
     #shopping-cart .cart-content .card a {
@@ -398,9 +412,11 @@ html, body {
         text-align: center;
         transition: all 0.3s; }
         #navbar .navbar .navbar-nav .nav-item .nav-link.active {
-          border-bottom: 1px solid #ffffff; }
+          color: #828282;
+          font-weight: 600; }
       #navbar .navbar .navbar-nav .nav-item:hover .nav-link {
-        border-bottom: 1px solid #ffffff; }
+        color: #828282;
+        font-weight: 600; }
     #navbar .navbar .icons-perfil {
       font-size: 18px;
       text-align: center; }
@@ -529,4 +545,4 @@ html, body {
 .section-footer3 {
   padding: .2rem 0;
   background-color: #4f4f4f;
-  color: #ffffff; }
+  color: #bdbdbd; }

@@ -192,9 +192,6 @@ html, body {
 
 .tab {
   overflow: hidden;
-  border-bottom: 3px solid transparent;
-  border-image: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
-  border-image-slice: 1;
   display: flex;
   flex-wrap: wrap;
   
@@ -219,6 +216,12 @@ html, body {
       color: $blue;
     }
   }
+}
+
+.hr-tab {
+  margin: 0;
+  height: 3px !important;
+  background: radial-gradient(circle, #9CD3CD 0%, #BDE7E2 34%, #FFFFFF 94%);
 }
 
 .tabcontent {
@@ -259,7 +262,6 @@ html, body {
 }
 
 .filter {
-  border: 1px solid #e0e0e0;
   background-color: #fbfbfb;
   border-radius: 5px;
   & > button {
@@ -287,22 +289,37 @@ html, body {
       width: 155px;
       min-width: auto;
       inset: initial !important;
-      top: 0 !important;
+      top: 100% !important;
       right: 0 !important;
+      transform: none !important;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top: transparent;
     }
+  }
+  .label-filter-order{
+    border: 1px solid #e0e0e0;
+    border-right: none;
+  }
+  #filter-order {
+    border: 1px solid #e0e0e0;
+    border-left: none;
+  }
+  #filter-order.show {
+    border-bottom-color: transparent;
+    border-bottom-right-radius: 0px;
   }
 }
 
 #shopping-cart {
   position: fixed;
-  right: -100%;
   top: 65px;
   width: 60vw;
   height: calc(100vh - 65px);
   background: $white;
   padding: 1rem;
   z-index: 1000;
-  transition: all 0.3s;
+  transition: all 1.5s;
   @media (min-width: 768px) {
     width: 45vw;
   }
@@ -331,6 +348,7 @@ html, body {
     height: calc(100% - 50px);
     overflow-x: hidden;
     overflow-y: auto;
+    cursor: grab;
   }
   .cart-content {
     .card {
