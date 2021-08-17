@@ -447,3 +447,53 @@ html, body {
     
   }
 }
+
+#modal-suscribe {
+  .img-suscribe {
+    background-image: url(../images/img-suscribe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .modal-content {
+    background: linear-gradient(180deg, #ffffff 25%, #f6f6f6 52%, #ffffff 100%);
+  }
+  .modal-header {
+    border: none;
+    .btn-close {
+      background: none;
+    }
+  }
+  .modal-body {
+    .title {
+      font-weight: 700;
+      text-align: center;
+      color: $blue;
+    }
+    .subtitle {
+      font-weight: 300;
+      text-align: center;
+      color: $gray;
+    }
+    p {
+      font-weight: 300;
+      color: $gray;
+    }
+    .small {
+      font-size: 0.6rem;
+      margin: 0;
+      color: $gray;
+    }
+    form {
+      input {
+        color: $gray;
+        font-weight: 300;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-color: $blue;
+        }
+      }
+    }
+  }
+}

@@ -165,3 +165,7 @@ slider.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 1; //scroll-fast
   slider.scrollLeft = scrollLeft - walk;
 });
+
+$(window).ready(function() {
+  $('#modal-suscribe').modal('show')
+})

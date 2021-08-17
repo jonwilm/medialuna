@@ -350,6 +350,47 @@ html, body {
     #shopping-cart .cart-total p {
       font-size: 1.2rem; }
 
+#modal-suscribe .img-suscribe {
+  background-image: url(../images/img-suscribe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#modal-suscribe .modal-content {
+  background: linear-gradient(180deg, #ffffff 25%, #f6f6f6 52%, #ffffff 100%); }
+
+#modal-suscribe .modal-header {
+  border: none; }
+  #modal-suscribe .modal-header .btn-close {
+    background: none; }
+
+#modal-suscribe .modal-body .title {
+  font-weight: 700;
+  text-align: center;
+  color: #90ccc6; }
+
+#modal-suscribe .modal-body .subtitle {
+  font-weight: 300;
+  text-align: center;
+  color: #4f4f4f; }
+
+#modal-suscribe .modal-body p {
+  font-weight: 300;
+  color: #4f4f4f; }
+
+#modal-suscribe .modal-body .small {
+  font-size: 0.6rem;
+  margin: 0;
+  color: #4f4f4f; }
+
+#modal-suscribe .modal-body form input {
+  color: #4f4f4f;
+  font-weight: 300; }
+  #modal-suscribe .modal-body form input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #90ccc6; }
+
 #navbar {
   position: fixed;
   top: 0;
@@ -458,7 +499,7 @@ html, body {
     background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #9CD3CD 100%); }
   .btn-blue-white:focus {
     box-shadow: none;
-    color: #90ccc6; }
+    color: #ffffff; }
 
 .btn-blue-white2 {
   color: #4f4f4f;
@@ -471,7 +512,7 @@ html, body {
     background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #9CD3CD 100%); }
   .btn-blue-white2:focus {
     box-shadow: none;
-    color: #90ccc6; }
+    color: #ffffff; }
 
 .btn-black-white {
   color: #ffffff;
