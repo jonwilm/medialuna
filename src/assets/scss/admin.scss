@@ -48,6 +48,11 @@
       font-weight: 700;
       color: $gray;
     }
+    .img-perfil {
+      max-width: 100px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.31);
+    }
     .table-perfil {
       tbody {
         tr {
@@ -75,7 +80,6 @@
         transition: all 0.3s;
         &:hover {
           color: #000;
-          font-weight: 600;
         }
       }
     }
@@ -201,7 +205,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  // width: 30%;
+  .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #aefaf294;
+  }
   .form-check-label {
     width: 30%;
   }

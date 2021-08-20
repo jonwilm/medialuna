@@ -6,6 +6,7 @@
 }
 .btn-blue-white {
   color: $white;
+  border: none;
   font-weight: bold;
   border-radius: 5px;
   background: linear-gradient(134.42deg, #9CD3CD 0%, #9CD3CD 34%, #BDE7E2 100%);
@@ -26,6 +27,7 @@
 }
 .btn-blue-white2 {
   color: $gray;
+  border: none;
   border-radius: 5px;
   background: linear-gradient(134.42deg, #BDE7E2 0%, #D1F2EE 34%, #DDF7F3 100%);
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.31);
@@ -45,6 +47,7 @@
 }
 .btn-black-white {
   color: $white;
+  border: none;
   font-weight: 700;
   border-radius: 5px;
   background: linear-gradient(134.42deg, #333333 0%, #828282 34%, #e0e0e0 100%);

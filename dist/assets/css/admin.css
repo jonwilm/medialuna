@@ -40,6 +40,11 @@
   font-weight: 700;
   color: #4f4f4f; }
 
+.section-admin .content .img-perfil {
+  max-width: 100px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.31); }
+
 .section-admin .content .table-perfil tbody tr th {
   font-weight: 300;
   padding-right: 2rem;
@@ -59,8 +64,7 @@
   font-size: 0.8rem;
   transition: all 0.3s; }
   .section-admin .content .address a:hover {
-    color: #000;
-    font-weight: 600; }
+    color: #000; }
 
 .section-admin .content .imgprogressbar {
   position: relative;
@@ -165,6 +169,11 @@
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.section-admin .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #aefaf294; }
 
 .section-admin .form-check-label {
   width: 30%; }

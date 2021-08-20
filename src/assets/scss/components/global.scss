@@ -53,10 +53,22 @@ html, body {
 .text-gray {
   color: $gray;
 }
+.col-md-22 {
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 22%;
+  }
+}
 .col-md-25 {
   @media (min-width: 768px) {
     flex: 0 0 auto;
     width: 25%;
+  }
+}
+.col-md-34 {
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 34%;
   }
 }
 #redes {
@@ -126,12 +138,13 @@ html, body {
 
 .content-cards-menu {
   .card {
+    border: none;
     border-radius: 5px;
     box-shadow: 0px 7px 10px -6px rgba(0, 0, 0, 0.35);
     transition: all .3s;
     
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
     
     img {
@@ -356,10 +369,26 @@ html, body {
     height: calc(100% - 50px);
     overflow-x: hidden;
     overflow-y: auto;
+    padding-right: 5px;
+    &::-webkit-scrollbar {
+      width: 4px;
+      @media (min-width: 992px) {
+        width: 8px;
+      }
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $blue;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #ccc;
+      border-radius: 4px;
+    }
   }
   .cart-content {
     .card {
       text-align: end;
+      background: linear-gradient(180deg, #F2F2F2 25%, #F6F6F6 52%, #FFF 100%);
       a {
         font-size: 0.8rem;
         text-decoration: none;
@@ -381,6 +410,11 @@ html, body {
           font-size: 1rem;
           margin-bottom: 0;
         }
+      }
+      .card-img-top {
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
       }
     }
     .content-cantidad {
@@ -448,6 +482,7 @@ html, body {
   }
   .cart-total {
     text-align: center;
+    padding-bottom: 1rem;
     p{
       font-size: 1.2rem;
     }
@@ -461,9 +496,17 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+  .content-suscribe {
+    background: linear-gradient(180deg, #ffffff 25%, #f6f6f6 52%, #ffffff 100%);
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
   }
   .modal-content {
-    background: linear-gradient(180deg, #ffffff 25%, #f6f6f6 52%, #ffffff 100%);
+    background-color: transparent;
+    border: none;
   }
   .modal-header {
     border: none;
@@ -499,6 +542,21 @@ html, body {
           outline: none;
           box-shadow: none;
           border-color: $blue;
+        }
+      }
+      .form-check-input:checked {
+        background-color: $blue;
+        border-color: $blue;
+      }
+      .form-check-label {
+        color: $gray;
+        font-weight: 300;
+      }
+      a {
+        color: $gray;
+        transition: all 0.3s;
+        &:hover {
+          color: $blue;
         }
       }
     }

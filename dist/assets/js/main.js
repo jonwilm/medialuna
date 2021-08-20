@@ -2,14 +2,14 @@
 // NAVBAR
 // ------------------------------------------------------------
 $(window).ready(function () {
-  changeColorNavbar();
+  // changeColorNavbar();
   changeDesktopNavbar();
   
   tabcontentInitial = document.querySelector(".tabcontent.tab-ppal");
   tabcontentInitial.style.display = "block";
 });
 $(window).scroll(function () {
-  changeColorNavbar();
+  // changeColorNavbar();
   changeDesktopNavbar();
 });
 $(window).resize(function () {
@@ -18,11 +18,11 @@ $(window).resize(function () {
 function changeColorNavbar() {
   if ($(window).scrollTop() > 100) {
     $(".navbar").css({
-      "background-color": "rgba(144, 204, 198, .85)",
+      "background": "linear-gradient(87.71deg, rgba(189, 231, 226, 0.75) 0%, #9CD3CD 46%, rgba(156, 211, 205, 0.76) 100%)",
     });
   } else {
     $(".navbar").css({
-      "background-color": "rgba(144, 204, 198, .85)",
+      "background-color": "linear-gradient(87.71deg, rgba(189, 231, 226, 0.75) 0%, #9CD3CD 46%, rgba(156, 211, 205, 0.76) 100%)",
     });
   }
 }

@@ -32,19 +32,30 @@
 }
 .content-footer {
   @media (min-width: 1200px) {
-    width: 80%;
+    width: 90%;
   }
 }
 .section-footer2 {
   padding: .5rem 0;
   img {
-    width: calc(65px - 1rem);
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    width: 40px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 .section-footer3 {
   padding: .2rem 0;
   background-color: #4f4f4f;
   color: #bdbdbd;
+  small {
+    font-size: 12px;
+  }
+  a {
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $gray-light;
+    }
+  }
 }

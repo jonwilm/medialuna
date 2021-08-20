@@ -31,7 +31,8 @@
     .section-welcome .carousel-item .content-card .cuadro-welcome {
       position: relative;
       background-color: rgba(255, 255, 255, 0.9);
-      padding: 3rem 6rem; }
+      padding: 3rem 6rem;
+      border-radius: 5px; }
       .section-welcome .carousel-item .content-card .cuadro-welcome img {
         position: absolute;
         top: 0;
