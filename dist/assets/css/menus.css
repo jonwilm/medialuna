@@ -71,7 +71,7 @@
       border: none;
       transition: all .3s; }
       .section-dishes .menu-diario .cards-menu-diario .card:hover {
-        transform: scale(1.05); }
+        transform: scale(1.02); }
       .section-dishes .menu-diario .cards-menu-diario .card img {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px; }

@@ -448,6 +448,7 @@ html, body {
     padding-top: 5px;
     padding-bottom: 5px;
     background: linear-gradient(87.71deg, rgba(189, 231, 226, 0.75) 0%, #9CD3CD 46%, rgba(156, 211, 205, 0.76) 100%);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
     transition: all 0.3s; }
     @media (min-width: 1200px) {
       #navbar .navbar {
@@ -590,6 +591,7 @@ html, body {
     color: #ffffff;
     font-weight: bold; }
   .section-footer1 p {
+    font-size: 0.8rem;
     color: #ffffff;
     font-weight: 200; }
   .section-footer1 ul {
@@ -598,6 +600,7 @@ html, body {
     list-style: none;
     margin-bottom: .3rem; }
     .section-footer1 li .items-menu {
+      font-size: 0.8rem;
       color: #ffffff;
       font-weight: 200;
       text-decoration: none; }
