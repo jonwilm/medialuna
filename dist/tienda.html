@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css">
+  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css">
   <link rel="stylesheet" href="assets/css/styles.min.css">
 
 </head>
@@ -91,12 +93,34 @@
     </div>
     <div class="section-dishes">
       <div class="container">
-        <div class="tab">
+        <div class="category-tab tab">
+          <div>
+            <button class="tablinks active" onclick="openCity(event, 'Categoría1')">Categoría1</button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Categoría2')">Categoría2</button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Categoría3')">Categoría3</button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Categoría4')">Categoría4</button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Categoría5')">Categoría5</button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Categoría6')">Categoría6</button>
+          </div>
+        </div>
+    
+        <!-- <div class="tab">
           <button class="tablinks active" onclick="openCity(event, 'Categoría1')">Categoría1</button>
           <button class="tablinks" onclick="openCity(event, 'Categoría2')">Categoría2</button>
           <button class="tablinks" onclick="openCity(event, 'Categoría3')">Categoría3</button>
           <button class="tablinks" onclick="openCity(event, 'Categoría4')">Categoría4</button>
-        </div>
+          <button class="tablinks" onclick="openCity(event, 'Categoría5')">Categoría5</button>
+        </div> -->
         <hr class="hr-tab">
         <div id="Categoría1" class="tabcontent tab-ppal">
           <div class="row mb-3">
@@ -1066,6 +1090,490 @@
             </ul>
           </div>
         </div>
+        <div id="Categoría5" class="tabcontent">
+          <div class="row mb-3">
+            <div class="col-6 col-sm-8 col-md-9">
+              <p class="mb-0">1-24 de 27 resultados</p>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 d-grid gap-2">
+              <div class="filter btn-group" role="group">
+                <button type="button" class="btn w-50" disabled>Ordenar por:</button>
+                <div class="btn-group w-50" role="group">
+                  <button id="filter-order" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Destacados
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="filter-order">
+                    <li><a class="dropdown-item" href="#">Destacados</a></li>
+                    <li><a class="dropdown-item" href="#">Precio</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row content-cards-menu">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <ul class="pagination">
+              <div>
+                <li><a class="prev" href="#"><i class="fa fa-angle-left"></i> Anterior</a></li>
+              </div>
+              <div>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </div>
+              <div>
+                <li><a class="next" href="#">Siguiente <i class="fa fa-angle-right"></i></a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="Categoría6" class="tabcontent">
+          <div class="row mb-3">
+            <div class="col-6 col-sm-8 col-md-9">
+              <p class="mb-0">1-24 de 27 resultados</p>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 d-grid gap-2">
+              <div class="filter btn-group" role="group">
+                <button type="button" class="btn w-50" disabled>Ordenar por:</button>
+                <div class="btn-group w-50" role="group">
+                  <button id="filter-order" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Destacados
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="filter-order">
+                    <li><a class="dropdown-item" href="#">Destacados</a></li>
+                    <li><a class="dropdown-item" href="#">Precio</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row content-cards-menu">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="card text-center">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                    <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                    <span class="text-triangulo">NUEVO</span>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pescado en salsa verde</h5>
+                      <p class="card-text">10,00€</p>
+                      <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <ul class="pagination">
+              <div>
+                <li><a class="prev" href="#"><i class="fa fa-angle-left"></i> Anterior</a></li>
+              </div>
+              <div>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </div>
+              <div>
+                <li><a class="next" href="#">Siguiente <i class="fa fa-angle-right"></i></a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1321,6 +1829,7 @@
   <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
   <script src="assets/libs/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="assets/libs/slick-slider/slick/slick.min.js"></script>
   <script src="assets/libs/wowjs/wow.min.js"></script>
   <!-- <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script> -->
   <script src="assets/js/main.js"></script>
@@ -1333,6 +1842,16 @@
       live:         true        // default
     })
     wow.init();
+  </script>
+  <script>
+    $('.category-tab').slick({
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      prevArrow: '<button type = "button" class = "slick-prev"><i class="fa fa-angle-left"></i></button>',
+      nextArrow: '<button type = "button" class = "slick-next"><i class="fa fa-angle-right"></i></button>',
+    });
   </script>
 </body>
 </html>

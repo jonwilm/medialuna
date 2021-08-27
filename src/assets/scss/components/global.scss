@@ -211,22 +211,23 @@ html, body {
 }
 
 .tab {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
+  // overflow: hidden;
+  // display: flex;
+  // flex-wrap: wrap;
   
-  button {
+  .tablinks {
     flex: 20%;
     background-color: inherit;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: .5rem .5rem 0rem;
     transition: all 0.3s;
     color: $gray-light;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 100%;
     
     &:hover {
       color: $blue;
@@ -234,6 +235,24 @@ html, body {
     
     &.active {
       color: $blue;
+    }
+  }
+  .slick-prev, .slick-next {
+    z-index: 5;
+    font-size: 1.5rem;
+    color: $blue;
+    &:before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    @media (max-width: 767.98px) {
+      left: -10px;
+    }
+  }
+  .slick-next {
+    @media (max-width: 767.98px) {
+      right: -10px;
     }
   }
 }

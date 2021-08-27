@@ -143,26 +143,38 @@ html, body {
       .pagination li a.active {
         background-color: #90ccc6; }
 
-.tab {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap; }
-  .tab button {
-    flex: 20%;
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: .5rem 1rem;
-    transition: all 0.3s;
-    color: #828282;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
-    .tab button:hover {
-      color: #90ccc6; }
-    .tab button.active {
-      color: #90ccc6; }
+.tab .tablinks {
+  flex: 20%;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: .5rem .5rem 0rem;
+  transition: all 0.3s;
+  color: #828282;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%; }
+  .tab .tablinks:hover {
+    color: #90ccc6; }
+  .tab .tablinks.active {
+    color: #90ccc6; }
+
+.tab .slick-prev, .tab .slick-next {
+  z-index: 5;
+  font-size: 1.5rem;
+  color: #90ccc6; }
+  .tab .slick-prev:before, .tab .slick-next:before {
+    display: none; }
+
+@media (max-width: 767.98px) {
+  .tab .slick-prev {
+    left: -10px; } }
+
+@media (max-width: 767.98px) {
+  .tab .slick-next {
+    right: -10px; } }
 
 .hr-tab {
   margin: 0;
