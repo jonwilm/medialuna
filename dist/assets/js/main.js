@@ -172,6 +172,5 @@ slider.addEventListener("mousemove", (e) => {
 });
 
 $(window).ready(function () {
-  $("#modal-suscribe").modal("hide");
-  $("#menu-diario").modal("show");
+  $("#modal-suscribe").modal("show");
 });
