@@ -590,6 +590,7 @@ html, body {
   }
   .modal-header {
     border-bottom: none;
+    align-items: flex-end;
     img {
       width: 30%;
     }
@@ -611,7 +612,7 @@ html, body {
     margin: 0 1rem;
     .contenedor-menu {
       margin-top: 1rem;
-      padding: 1rem 2rem;
+      padding: .5rem 2rem;
       background-color: white;
       .title-card-menu {
         font-size: 2.5rem;
@@ -628,6 +629,91 @@ html, body {
     .descrip-menu-semanal {
       padding: .3rem;
       font-size: 1.2rem;
+    }
+    .contenedor-footer {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      background-image: url(../images/bg-footer.png);
+      padding: 0.5rem 1rem;
+      background-size: cover;
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#menu-diario {
+  .modal-content {
+    background-image: url(../images/bg-footer.png);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  .modal-header {
+    border-bottom: none;
+    align-items: flex-end;
+    img {
+      width: 30%;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+    }
+    .title-text {
+      p {
+        margin-bottom: 0;
+        color: white;
+        text-align: end;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .modal-body {
+    margin: 0 1rem;
+    .contenedor-menu {
+      display: flex;
+      margin-top: 1rem;
+      padding: .5rem 2rem;
+      background-color: white;
+      .items {
+        position: relative;
+        flex: 30%;
+        margin: 2rem;
+        .rectangle-1 {
+          position: absolute;
+          text-align: end;
+          padding: .3rem .8rem;
+          color: $white;
+          width: 100%;
+          top: 15px;
+          background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #98A0EE 61%);
+        }
+        .rectangle-2 {
+          position: absolute;
+          text-align: end;
+          padding: .3rem .8rem;
+          color: $white;
+          width: 100%;
+          top: 15px;
+          background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #EE6E7A 61%);
+        }
+        .rectangle-3 {
+          position: absolute;
+          text-align: end;
+          padding: .3rem .8rem;
+          color: $white;
+          width: 100%;
+          top: 15px;
+          background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #D0B070 61%);
+        }
+        .descrip-menu-diario {
+          padding: .3rem;
+          font-size: 1.2rem;
+        }
+      }
     }
     .contenedor-footer {
       margin-top: 2rem;
