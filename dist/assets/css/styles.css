@@ -431,14 +431,15 @@ html, body {
   #modal-suscribe .modal-body form a:hover {
     color: #90ccc6; }
 
-#menu-semanal .modal-content {
+#menu-semanal .content-semanal {
   background-image: url(../images/bg-footer.png);
   background-repeat: repeat;
   background-size: cover; }
 
 #menu-semanal .modal-header {
   border-bottom: none;
-  align-items: flex-end; }
+  align-items: flex-end;
+  margin: 0 2rem; }
   #menu-semanal .modal-header img {
     width: 30%; }
   #menu-semanal .modal-header h2 {
@@ -480,14 +481,15 @@ html, body {
     #menu-semanal .modal-body .contenedor-footer p {
       margin-bottom: 0; }
 
-#menu-diario .modal-content {
+#menu-diario .content-diario {
   background-image: url(../images/bg-footer.png);
   background-repeat: repeat;
   background-size: cover; }
 
 #menu-diario .modal-header {
   border-bottom: none;
-  align-items: flex-end; }
+  align-items: flex-end;
+  margin: 0 2rem; }
   #menu-diario .modal-header img {
     width: 30%; }
   #menu-diario .modal-header h2 {
