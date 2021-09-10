@@ -431,6 +431,54 @@ html, body {
   #modal-suscribe .modal-body form a:hover {
     color: #90ccc6; }
 
+#menu-semanal .modal-content {
+  background-image: url(../images/bg-footer.png);
+  background-repeat: repeat;
+  background-size: cover; }
+
+#menu-semanal .modal-header {
+  border-bottom: none; }
+  #menu-semanal .modal-header img {
+    width: 30%; }
+  #menu-semanal .modal-header h2 {
+    color: white;
+    text-align: center; }
+  #menu-semanal .modal-header .title-text p {
+    margin-bottom: 0;
+    color: white;
+    text-align: end;
+    font-size: 1.3rem;
+    font-weight: bold; }
+
+#menu-semanal .modal-body {
+  margin: 0 1rem; }
+  #menu-semanal .modal-body .contenedor-menu {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: white; }
+    #menu-semanal .modal-body .contenedor-menu .title-card-menu {
+      font-size: 2.5rem; }
+  #menu-semanal .modal-body .primero {
+    background-image: url(../images/home/bg-menu.png);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: white;
+    text-align: end;
+    border-radius: 10px; }
+  #menu-semanal .modal-body .descrip-menu-semanal {
+    padding: .3rem;
+    font-size: 1.2rem; }
+  #menu-semanal .modal-body .contenedor-footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-image: url(../images/bg-footer.png);
+    padding: 0.5rem 1rem;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; }
+    #menu-semanal .modal-body .contenedor-footer p {
+      margin-bottom: 0; }
+
 #navbar {
   position: fixed;
   top: 0;
