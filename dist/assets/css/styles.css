@@ -436,41 +436,43 @@ html, body {
   background-repeat: repeat;
   background-size: cover; }
 
-#menu-semanal .modal-header {
-  border-bottom: none;
+#menu-semanal .header-menu {
+  display: flex;
   align-items: flex-end;
-  margin: 0 2rem; }
-  #menu-semanal .modal-header img {
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding: 1rem 0; }
+  #menu-semanal .header-menu img {
     width: 30%; }
-  #menu-semanal .modal-header h2 {
+  #menu-semanal .header-menu h2 {
     color: white;
     text-align: center; }
-  #menu-semanal .modal-header .title-text p {
+  #menu-semanal .header-menu .title-text p {
     margin-bottom: 0;
     color: white;
     text-align: end;
     font-size: 1.3rem;
     font-weight: bold; }
 
-#menu-semanal .modal-body {
+#menu-semanal .menu-content {
   margin: 0 1rem; }
-  #menu-semanal .modal-body .contenedor-menu {
+  #menu-semanal .menu-content .contenedor-menu {
     margin-top: 1rem;
     padding: .5rem 2rem;
     background-color: white; }
-    #menu-semanal .modal-body .contenedor-menu .title-card-menu {
+    #menu-semanal .menu-content .contenedor-menu .title-card-menu {
       font-size: 2.5rem; }
-  #menu-semanal .modal-body .primero {
+  #menu-semanal .menu-content .primero {
     background-image: url(../images/home/bg-menu.png);
     font-size: 1.5rem;
     padding: 0 1rem;
     color: white;
     text-align: end;
     border-radius: 10px; }
-  #menu-semanal .modal-body .descrip-menu-semanal {
+  #menu-semanal .menu-content .descrip-menu-semanal {
     padding: .3rem;
-    font-size: 1.2rem; }
-  #menu-semanal .modal-body .contenedor-footer {
+    font-size: 1rem; }
+  #menu-semanal .menu-content .contenedor-footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
     background-image: url(../images/bg-footer.png);
@@ -478,69 +480,66 @@ html, body {
     background-size: cover;
     display: flex;
     justify-content: space-between; }
-    #menu-semanal .modal-body .contenedor-footer p {
+    #menu-semanal .menu-content .contenedor-footer p {
       margin-bottom: 0; }
 
-#menu-diario .content-diario {
-  background-image: url(../images/bg-footer.png);
-  background-repeat: repeat;
-  background-size: cover; }
-
-#menu-diario .modal-header {
-  border-bottom: none;
+.content-diario .header-menu {
+  display: flex;
   align-items: flex-end;
-  margin: 0 2rem; }
-  #menu-diario .modal-header img {
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding: 1rem 0; }
+  .content-diario .header-menu img {
     width: 30%; }
-  #menu-diario .modal-header h2 {
+  .content-diario .header-menu h2 {
     color: white;
     text-align: center; }
-  #menu-diario .modal-header .title-text p {
+  .content-diario .header-menu .title-text p {
     margin-bottom: 0;
     color: white;
     text-align: end;
     font-size: 1.3rem;
     font-weight: bold; }
 
-#menu-diario .modal-body {
-  margin: 0 1rem; }
-  #menu-diario .modal-body .contenedor-menu {
+.content-diario .menu-content {
+  margin: 0 1rem;
+  padding: 0 0 1rem 0; }
+  .content-diario .menu-content .contenedor-menu {
     display: flex;
     margin-top: 1rem;
-    padding: .5rem 2rem;
     background-color: white; }
-    #menu-diario .modal-body .contenedor-menu .items {
+    .content-diario .menu-content .contenedor-menu .items {
       position: relative;
       flex: 30%;
-      margin: 2rem; }
-      #menu-diario .modal-body .contenedor-menu .items .rectangle-1 {
+      margin: 1.5rem 1.5rem .5rem 1.5rem; }
+      .content-diario .menu-content .contenedor-menu .items .rectangle-1 {
         position: absolute;
         text-align: end;
         padding: .3rem .8rem;
-        color: #ffffff;
+        color: white;
         width: 100%;
         top: 15px;
         background: linear-gradient(91.72deg, rgba(255, 255, 255, 0.3) 0%, #98A0EE 61%); }
-      #menu-diario .modal-body .contenedor-menu .items .rectangle-2 {
+      .content-diario .menu-content .contenedor-menu .items .rectangle-2 {
         position: absolute;
         text-align: end;
         padding: .3rem .8rem;
-        color: #ffffff;
+        color: white;
         width: 100%;
         top: 15px;
         background: linear-gradient(91.72deg, rgba(255, 255, 255, 0.3) 0%, #EE6E7A 61%); }
-      #menu-diario .modal-body .contenedor-menu .items .rectangle-3 {
+      .content-diario .menu-content .contenedor-menu .items .rectangle-3 {
         position: absolute;
         text-align: end;
         padding: .3rem .8rem;
-        color: #ffffff;
+        color: white;
         width: 100%;
         top: 15px;
         background: linear-gradient(91.72deg, rgba(255, 255, 255, 0.3) 0%, #D0B070 61%); }
-      #menu-diario .modal-body .contenedor-menu .items .descrip-menu-diario {
+      .content-diario .menu-content .contenedor-menu .items .descrip-menu-diario {
         padding: .3rem;
-        font-size: 1.2rem; }
-  #menu-diario .modal-body .contenedor-footer {
+        font-size: .8rem; }
+  .content-diario .menu-content .contenedor-footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
     background-image: url(../images/bg-footer.png);
@@ -548,7 +547,7 @@ html, body {
     background-size: cover;
     display: flex;
     justify-content: space-between; }
-    #menu-diario .modal-body .contenedor-footer p {
+    .content-diario .menu-content .contenedor-footer p {
       margin-bottom: 0; }
 
 #navbar {
