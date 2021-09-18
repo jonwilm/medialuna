@@ -582,12 +582,7 @@ html, body {
   }
 }
 
-#menu-semanal {
-  .content-semanal {
-    background-image: url(../images/bg-footer.png);
-    background-repeat: repeat;
-    background-size: cover;
-  }
+.content-semanal {
   .header-menu {
     display: flex;
     align-items: flex-end;
@@ -598,7 +593,7 @@ html, body {
       width: 30%;
     }
     h2 {
-      color: white;
+      color: #ffffff;
       text-align: center;
     }
     .title-text {
@@ -618,16 +613,30 @@ html, body {
       padding: .5rem 2rem;
       background-color: white;
       .title-card-menu {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
     .primero {
-      background-image: url(../images/home/bg-menu.png);
       font-size: 1.5rem;
       padding: 0 1rem;
       color: white;
-      text-align: end;
-      border-radius: 10px;
+      position: absolute; 
+      width: 100%; 
+      height: 100%;
+      top: 0;
+      right: 0;
+      transform: translateX(60%);
+    }
+    .postre {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      color: white;
+      position: absolute; 
+      width: 100%; 
+      height: 100%;
+      top: 0;
+      right: 0;
+      transform: translateX(67%);
     }
     .descrip-menu-semanal {
       padding: .3rem;
@@ -635,12 +644,16 @@ html, body {
     }
     .contenedor-footer {
       margin-top: 2rem;
-      margin-bottom: 1rem;
-      background-image: url(../images/bg-footer.png);
-      padding: 0.5rem 1rem;
-      background-size: cover;
-      display: flex;
-      justify-content: space-between;
+      padding-bottom: 1rem;
+      .content-text {
+        display: flex;
+        justify-content: space-between;
+        position: absolute; 
+        top: 0px; 
+        left: 0px;
+        width: 100%;
+        padding: 1rem;
+      }
       p {
         margin-bottom: 0;
       }
@@ -683,32 +696,12 @@ html, body {
         position: relative;
         flex: 30%;
         margin: 1.5rem 1.5rem .5rem 1.5rem;
-        .rectangle-1 {
-          position: absolute;
-          text-align: end;
-          padding: .3rem .8rem;
-          color: white;
-          width: 100%;
-          top: 15px;
-          background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #98A0EE 61%);
-        }
-        .rectangle-2 {
-          position: absolute;
-          text-align: end;
-          padding: .3rem .8rem;
-          color: white;
-          width: 100%;
-          top: 15px;
-          background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #EE6E7A 61%);
-        }
-        .rectangle-3 {
-          position: absolute;
-          text-align: end;
-          padding: .3rem .8rem;
-          color: white;
-          width: 100%;
-          top: 15px;
-          background: linear-gradient(91.72deg, rgba(255,255,255,0.3) 0%, #D0B070 61%);
+        .img-degradado {
+          position: absolute; 
+          width: 100%; 
+          height: 100%; 
+          top: 0;
+          transform: translateY(6%);
         }
         .descrip-menu-diario {
           padding: .3rem;
@@ -719,11 +712,15 @@ html, body {
     .contenedor-footer {
       margin-top: 2rem;
       margin-bottom: 1rem;
-      background-image: url(../images/bg-footer.png);
-      padding: 0.5rem 1rem;
-      background-size: cover;
-      display: flex;
-      justify-content: space-between;
+      .content-text {
+        display: flex;
+        justify-content: space-between;
+        position: absolute; 
+        top: 0px; 
+        left: 0px;
+        width: 100%;
+        padding: 1rem;
+      }
       p {
         margin-bottom: 0;
       }
