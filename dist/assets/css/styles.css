@@ -442,12 +442,22 @@ html, body {
   .content-semanal .header-menu h2 {
     color: #ffffff;
     text-align: center; }
+    @media print {
+      .content-semanal .header-menu h2 {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
   .content-semanal .header-menu .title-text p {
     margin-bottom: 0;
     color: white;
     text-align: end;
     font-size: 1.3rem;
     font-weight: bold; }
+    @media print {
+      .content-semanal .header-menu .title-text p {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
 
 .content-semanal .menu-content {
   margin: 0 1rem; }
@@ -456,7 +466,8 @@ html, body {
     padding: .5rem 2rem;
     background-color: white; }
     .content-semanal .menu-content .contenedor-menu .title-card-menu {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-bottom: 0; }
   .content-semanal .menu-content .primero {
     font-size: 1.5rem;
     padding: 0 1rem;
@@ -467,6 +478,11 @@ html, body {
     top: 0;
     right: 0;
     transform: translateX(60%); }
+    @media print {
+      .content-semanal .menu-content .primero {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
   .content-semanal .menu-content .postre {
     font-size: 1.5rem;
     padding: 0 1rem;
@@ -477,9 +493,16 @@ html, body {
     top: 0;
     right: 0;
     transform: translateX(67%); }
+    @media print {
+      .content-semanal .menu-content .postre {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
   .content-semanal .menu-content .descrip-menu-semanal {
     padding: .3rem;
     font-size: 1rem; }
+    .content-semanal .menu-content .descrip-menu-semanal p:nth-child(2) {
+      margin-bottom: 0; }
   .content-semanal .menu-content .contenedor-footer {
     margin-top: 2rem;
     padding-bottom: 1rem; }
@@ -487,10 +510,13 @@ html, body {
       display: flex;
       justify-content: space-between;
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 8px;
+      left: 0;
       width: 100%;
-      padding: 1rem; }
+      padding: 0 1rem; }
+      @media print {
+        .content-semanal .menu-content .contenedor-footer .content-text {
+          top: 0px; } }
     .content-semanal .menu-content .contenedor-footer p {
       margin-bottom: 0; }
 
@@ -505,12 +531,22 @@ html, body {
   .content-diario .header-menu h2 {
     color: white;
     text-align: center; }
+    @media print {
+      .content-diario .header-menu h2 {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
   .content-diario .header-menu .title-text p {
     margin-bottom: 0;
     color: white;
     text-align: end;
     font-size: 1.3rem;
     font-weight: bold; }
+    @media print {
+      .content-diario .header-menu .title-text p {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
 
 .content-diario .menu-content {
   margin: 0 1rem;
@@ -539,10 +575,13 @@ html, body {
       display: flex;
       justify-content: space-between;
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 8px;
+      left: 0;
       width: 100%;
-      padding: 1rem; }
+      padding: 0 1rem; }
+      @media print {
+        .content-diario .menu-content .contenedor-footer .content-text {
+          top: 0px; } }
     .content-diario .menu-content .contenedor-footer p {
       margin-bottom: 0; }
 

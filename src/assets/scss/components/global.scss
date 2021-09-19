@@ -595,6 +595,10 @@ html, body {
     h2 {
       color: #ffffff;
       text-align: center;
+      @media print {
+        -webkit-print-color-adjust: exact; /*economy | exact*/
+        color-adjust: exact;
+      }
     }
     .title-text {
       p {
@@ -603,6 +607,10 @@ html, body {
         text-align: end;
         font-size: 1.3rem;
         font-weight: bold;
+        @media print {
+          -webkit-print-color-adjust: exact; /*economy | exact*/
+          color-adjust: exact;
+        }
       }
     }
   }
@@ -614,6 +622,7 @@ html, body {
       background-color: white;
       .title-card-menu {
         font-size: 2rem;
+        margin-bottom: 0;
       }
     }
     .primero {
@@ -626,6 +635,10 @@ html, body {
       top: 0;
       right: 0;
       transform: translateX(60%);
+      @media print {
+        -webkit-print-color-adjust: exact; /*economy | exact*/
+        color-adjust: exact;
+      }
     }
     .postre {
       font-size: 1.5rem;
@@ -637,10 +650,19 @@ html, body {
       top: 0;
       right: 0;
       transform: translateX(67%);
+      @media print {
+        -webkit-print-color-adjust: exact; /*economy | exact*/
+        color-adjust: exact;
+      }
     }
     .descrip-menu-semanal {
       padding: .3rem;
       font-size: 1rem;
+      p {
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+      }
     }
     .contenedor-footer {
       margin-top: 2rem;
@@ -649,10 +671,13 @@ html, body {
         display: flex;
         justify-content: space-between;
         position: absolute; 
-        top: 0px; 
-        left: 0px;
+        top: 8px;
+        left: 0;
         width: 100%;
-        padding: 1rem;
+        padding: 0 1rem;
+        @media print {
+          top: 0px;
+        }
       }
       p {
         margin-bottom: 0;
@@ -674,6 +699,10 @@ html, body {
     h2 {
       color: white;
       text-align: center;
+      @media print {
+        -webkit-print-color-adjust: exact; /*economy | exact*/
+        color-adjust: exact;
+      }
     }
     .title-text {
       p {
@@ -682,6 +711,10 @@ html, body {
         text-align: end;
         font-size: 1.3rem;
         font-weight: bold;
+        @media print {
+          -webkit-print-color-adjust: exact; /*economy | exact*/
+          color-adjust: exact;
+        }
       }
     }
   }
@@ -716,10 +749,13 @@ html, body {
         display: flex;
         justify-content: space-between;
         position: absolute; 
-        top: 0px; 
-        left: 0px;
+        top: 8px;
+        left: 0;
         width: 100%;
-        padding: 1rem;
+        padding: 0 1rem;
+        @media print {
+          top: 0px;
+        }
       }
       p {
         margin-bottom: 0;
